@@ -7,11 +7,13 @@ export type Project = {
   slug: string;
   location: string;
   year: string;
+  lastModified: string;
   title: string;
   description: string;
   category: string;
   size: string;
   service: string;
+  serviceHref: string;
   images: {
     row: string;
     card: string;
@@ -23,6 +25,10 @@ export type Project = {
   summary: string;
   challenge: string;
   outcome: string;
+  builtFor: string;
+  whatChanged: string[];
+  whyItWorks: string;
+  relatedPostHref: string;
 };
 
 export type ProcessStep = {
@@ -34,11 +40,20 @@ export type ProcessStep = {
 export type Service = {
   slug: string;
   title: string;
+  lastModified: string;
   description: string;
   image: string;
+  ogImage: string;
   href: string;
   detail: string;
+  audience: string;
+  conversionImpact: string;
   deliverables: string[];
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+  relatedPostHrefs: string[];
 };
 
 export type ProofPoint = {

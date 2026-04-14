@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import type { CSSProperties } from "react";
 
 import { ArchesButton } from "@/components/ArchesButton";
@@ -33,7 +34,7 @@ export default function ServicesPage() {
           <SectionLabel letter="A" label="SERVICE INDEX" />
           <div className="arches-listing-grid">
             {services.map((service, index) => (
-              <a
+              <Link
                 className="arches-listing-card reveal"
                 href={service.href}
                 key={service.slug}
@@ -46,7 +47,7 @@ export default function ServicesPage() {
                 <h2>{service.title}</h2>
                 <span>{service.description}</span>
                 <strong>VIEW SERVICE</strong>
-              </a>
+              </Link>
             ))}
           </div>
           <ArchesButton href="/contact" className="arches-listing-cta">

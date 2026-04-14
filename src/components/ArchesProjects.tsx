@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { ArchesButton } from "@/components/ArchesButton";
 import { CounterformProjectVisual } from "@/components/CounterformProjectVisual";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -18,7 +20,7 @@ export function ArchesProjects() {
         </div>
         <div className="arches-project-list">
           {projects.map((project) => (
-            <a className="arches-project-row reveal" href={project.href} key={project.title}>
+            <Link className="arches-project-row reveal" href={project.href} key={project.title}>
               <div className="arches-project-title">
                 <p>
                   {project.location} <span>-</span> {project.year}
@@ -47,7 +49,7 @@ export function ArchesProjects() {
                   </div>
                 </dl>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

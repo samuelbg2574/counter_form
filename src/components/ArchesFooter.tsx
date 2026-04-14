@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { LogoMark } from "@/components/icons";
 
-const footerMenu = ["Home", "Process", "Services", "Projects", "Standard", "Contact"];
+const footerMenu = ["Home", "Work", "Services", "Journal", "Process", "Proof", "Contact"];
 
 export function ArchesFooter() {
   return (
@@ -55,10 +55,11 @@ function FooterColumn({ title, items }: { title: string; items: string[] }) {
 function footerHref(item: string) {
   const hrefs: Record<string, string> = {
     Home: "/",
+    Work: "/work",
     Process: "/#process",
     Services: "/services",
-    Projects: "/work",
-    Standard: "/#proof",
+    Journal: "/blog",
+    Proof: "/#proof",
     Contact: "/contact",
   };
 

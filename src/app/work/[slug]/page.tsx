@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 import { ArchesButton } from "@/components/ArchesButton";
 import { ArchesFooter } from "@/components/ArchesFooter";
 import { ArchesHeader } from "@/components/ArchesHeader";
 import { CounterformProjectVisual } from "@/components/CounterformProjectVisual";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { projects } from "@/components/arches-data";
+import { blogPosts, projects, services } from "@/components/arches-data";
 
 type WorkDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -33,6 +34,9 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
   if (!project) {
     notFound();
   }
+
+  const relatedService = services.find((service) => service.href === project.serviceHref);
+  const relatedPost = blogPosts.find((post) => post.href === project.relatedPostHref);
 
   return (
     <main className="arches-page">
@@ -76,8 +80,42 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
                 <ArchesButton href={project.liveUrl} external>
                   VIEW LIVE SITE
                 </ArchesButton>
+                <ArchesButton href={project.serviceHref}>VIEW SERVICE</ArchesButton>
                 <ArchesButton href="/contact">BUILD SOMETHING LIKE THIS</ArchesButton>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="arches-section arches-case-study-proof">
+          <div className="arches-container">
+            <div className="arches-case-study-grid">
+              <article className="reveal">
+                <p className="arches-detail-kicker">Built for</p>
+                <h2>{project.builtFor}</h2>
+              </article>
+              <article className="reveal">
+                <p className="arches-detail-kicker">What changed</p>
+                <ul className="arches-case-study-list">
+                  {project.whatChanged.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+              <article className="reveal">
+                <p className="arches-detail-kicker">Why it works</p>
+                <p>{project.whyItWorks}</p>
+                <div className="arches-case-study-links">
+                  {relatedService ? <Link href={relatedService.href}>{relatedService.title}</Link> : null}
+                  {relatedPost ? <Link href={relatedPost.href}>{relatedPost.title}</Link> : null}
+                </div>
+              </article>
+            </div>
+            <div className="arches-case-study-cta reveal">
+              <h2>Thinking about this for your business?</h2>
+              <p>
+                We can shape the same commercial logic around your offer, audience, and enquiry path.
+              </p>
+              <ArchesButton href="/contact">BOOK A PROJECT REVIEW</ArchesButton>
             </div>
           </div>
         </section>

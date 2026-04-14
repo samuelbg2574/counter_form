@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { ArchesButton } from "@/components/ArchesButton";
 import { ArchesFooter } from "@/components/ArchesFooter";
@@ -32,14 +33,14 @@ export default function WorkPage() {
           <SectionLabel letter="A" label="WORK INDEX" />
           <div className="arches-listing-grid">
             {projects.map((project) => (
-              <a className="arches-listing-card reveal" href={project.href} key={project.slug}>
+              <Link className="arches-listing-card reveal" href={project.href} key={project.slug}>
                 <CounterformProjectVisual project={project} size="card" />
                 <p>
                   {project.location} <span>-</span> {project.year}
                 </p>
                 <h2>{project.title}</h2>
                 <span>{project.summary}</span>
-              </a>
+              </Link>
             ))}
           </div>
           <ArchesButton href="/contact" className="arches-listing-cta">

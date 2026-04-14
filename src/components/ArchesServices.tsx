@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { CSSProperties } from "react";
 
 import { ArchesButton } from "@/components/ArchesButton";
@@ -12,14 +13,14 @@ export function ArchesServices() {
         <SectionLabel letter="B" label="WHAT YOU GET" />
         <div className="arches-section-head">
           <div>
-            <h2>One site that works harder than any template.</h2>
-            <p>Two services. Both built around one question: is this turning visitors into paying clients?</p>
+            <h2>One site that makes the right enquiry easier to send.</h2>
+            <p>Two focused services. Both built around one question: is this helping serious visitors become paying clients?</p>
           </div>
           <ArchesButton href="/services">VIEW ALL SERVICES</ArchesButton>
         </div>
         <div className="arches-service-list">
           {services.map((service, index) => (
-            <a
+            <Link
               className="arches-service-row reveal"
               href={service.href}
               key={service.title}
@@ -34,7 +35,7 @@ export function ArchesServices() {
                 <p>{service.description}</p>
               </div>
               <span className="arches-service-link">VIEW OFFER</span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

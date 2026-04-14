@@ -33,7 +33,7 @@ export function ArchesTestimonials() {
   return (
     <section className="arches-testimonials" id="proof">
       <div className="arches-container">
-        <SectionLabel letter="D" label="OUR REVIEWS" inverted />
+        <SectionLabel letter="D" label="OPERATING STANDARD" inverted />
         <div className="arches-testimonial-frame" aria-live="polite">
           <div
             className="arches-testimonial-track"

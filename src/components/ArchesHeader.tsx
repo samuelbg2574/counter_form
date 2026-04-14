@@ -3,20 +3,21 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { ChevronDownIcon, LogoMark, MenuIcon } from "@/components/icons";
+import { LogoMark, MenuIcon } from "@/components/icons";
 
 const pageLinks = [
-  { label: "PROCESS", href: "/#process" },
   { label: "WORK", href: "/work" },
-  { label: "STANDARD", href: "/#proof" },
+  { label: "SERVICES", href: "/services" },
+  { label: "JOURNAL", href: "/blog" },
+  { label: "PROCESS", href: "/#process" },
   { label: "CONTACT", href: "/contact" },
 ];
 
 const mobileLinks = [
-  { label: "PROCESS", href: "/#process" },
   { label: "WORK", href: "/work" },
   { label: "SERVICES", href: "/services" },
-  { label: "STANDARD", href: "/#proof" },
+  { label: "JOURNAL", href: "/blog" },
+  { label: "PROCESS", href: "/#process" },
   { label: "CONTACT", href: "/contact" },
   { label: "START A PROJECT", href: "/contact" },
 ];
@@ -42,22 +43,11 @@ export function ArchesHeader() {
   return (
     <header className="arches-header">
       <nav className="arches-header-left" aria-label="Primary">
-        <Link href="/#process">PROCESS</Link>
-        <Link href="/work">WORK</Link>
-        <Link href="/services">SERVICES</Link>
-        <div className="arches-pages-menu">
-          <button type="button">
-            PAGES
-            <ChevronDownIcon />
-          </button>
-          <div className="arches-pages-dropdown">
-            {pageLinks.map((link) => (
-              <Link href={link.href} key={link.label}>
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
+        {pageLinks.map((link) => (
+          <Link href={link.href} key={link.label}>
+            {link.label}
+          </Link>
+        ))}
       </nav>
       <Link className="arches-header-logo" href="/" onClick={() => setOpen(false)}>
         <LogoMark className="arches-logo-word" />

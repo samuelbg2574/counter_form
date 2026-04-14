@@ -5,11 +5,13 @@ export const projects: Project[] = [
     slug: "2728-photos",
     location: "Fine Art Photography",
     year: "2026",
+    lastModified: "2026-04-15",
     title: "2728 Photos",
     description: "A fine-art photography site that sells atmosphere before it sells prints, so enquiries arrive already convinced.",
     category: "Portfolio",
     size: "6 page system",
     service: "Web Design",
+    serviceHref: "/services/web-design",
     images: {
       row: "/images/counterform/work/2728-photos-row.webp",
       card: "/images/counterform/work/2728-photos-card.webp",
@@ -23,16 +25,28 @@ export const projects: Project[] = [
       "The photographer needed the work to feel premium before visitors reached the portfolio grid. The site had to sell mood, trust, and availability without burying the images under heavy interface.",
     outcome:
       "We framed the homepage like a gallery opening: a strong visual first impression, minimal copy, tactile calls to action, and a portfolio path that keeps the photography in control.",
+    builtFor:
+      "A high-end photographer who needs visitors to feel the value of the work before they ask about availability, prints, or commissions.",
+    whatChanged: [
+      "A cinematic hero leads with mood and authority before any sales copy appears.",
+      "Portfolio routes keep the photography central and remove unnecessary interface noise.",
+      "Enquiry paths are direct, restrained, and designed to feel appropriate for a premium creative service.",
+    ],
+    whyItWorks:
+      "The site sells atmosphere first, then gives serious buyers a clear path to enquire. That keeps the experience refined without making the next step hard to find.",
+    relatedPostHref: "/blog/what-makes-a-website-look-expensive",
   },
   {
     slug: "touch-point-judo-academy",
     location: "Local Sport",
     year: "2026",
+    lastModified: "2026-04-15",
     title: "Touch Point Judo Academy",
     description: "A local sports site that turns curious parents into booked taster sessions, without a phone call in the way.",
     category: "Local Business",
     size: "5 page site",
     service: "Web Design",
+    serviceHref: "/services/web-design",
     images: {
       row: "/images/counterform/work/touch-point-judo-row.webp",
       card: "/images/counterform/work/touch-point-judo-card.webp",
@@ -46,16 +60,28 @@ export const projects: Project[] = [
       "The academy needed to speak to two audiences at once: parents looking for confidence-building kids classes and adults who may be nervous about starting a martial art.",
     outcome:
       "We used bold contrast, friendly copy, direct WhatsApp actions, and clear programme paths so visitors can quickly understand the offer and take the next step.",
+    builtFor:
+      "A local academy that needs parents and beginners to understand the offer quickly and feel comfortable booking a first session.",
+    whatChanged: [
+      "The hero speaks directly to confidence, discipline, and first-session clarity.",
+      "Programme paths separate children, adults, and new starters without overwhelming the homepage.",
+      "Contact routes are visible early so interested visitors can act while motivation is high.",
+    ],
+    whyItWorks:
+      "Local buyers do not need a complicated brand story. They need to know who the classes are for, what happens next, and how to book without friction.",
+    relatedPostHref: "/blog/seo-or-new-website-first",
   },
   {
     slug: "ttm-tutoring",
     location: "Private Tuition",
     year: "2026",
+    lastModified: "2026-04-15",
     title: "TTM Tutoring",
     description: "A tuition site that makes parents trust the tutor before they've sent a single message.",
     category: "Education",
     size: "8 page system",
     service: "Web Design + SEO",
+    serviceHref: "/services/seo-optimisation",
     images: {
       row: "/images/counterform/work/ttm-tutoring-row.webp",
       card: "/images/counterform/work/ttm-tutoring-card.webp",
@@ -69,6 +95,16 @@ export const projects: Project[] = [
       "Private tuition buyers need confidence before they enquire. The site had to balance academic authority, warmth, and enough service detail to support organic discovery.",
     outcome:
       "We shaped the site around careful tutor matching, proof-led case studies, and structured service pages so the brand feels selective, credible, and easy to contact.",
+    builtFor:
+      "A private tuition company where parents need to trust the process before they share details about a child's education.",
+    whatChanged: [
+      "The homepage leads with trust, tutor fit, and the parent decision journey.",
+      "Service depth supports organic search without turning the site into a dense brochure.",
+      "Case-study proof gives anxious buyers a reason to believe before they enquire.",
+    ],
+    whyItWorks:
+      "Education buyers need reassurance and clarity. The structure gives them both, then routes them into an enquiry path once the brand feels credible.",
+    relatedPostHref: "/blog/seo-or-new-website-first",
   },
 ];
 
@@ -102,33 +138,87 @@ export const services: Service[] = [
   {
     slug: "web-design",
     title: "Websites that convert",
+    lastModified: "2026-04-15",
     description:
       "A site that looks like the premium choice, loads in under a second, and turns the right visitors into real enquiries, not tyre-kickers.",
     image: "/images/arches/08-service-thumb-image.webp",
+    ogImage: "/images/arches/08-service-thumb-image.webp",
     href: "/services/web-design",
     detail:
       "For UK independents whose website needs to match the quality of the work they sell.",
+    audience:
+      "Best for consultants, creatives, private tutors, local academies, photographers, and specialist service businesses whose current site undersells the work.",
+    conversionImpact:
+      "We clarify the offer, tighten the route to enquiry, and design the first impression so serious buyers understand why you are the premium choice before they compare prices.",
     deliverables: [
       "Positioning and homepage strategy",
       "Responsive design across every page",
       "Built in Next.js for real speed",
       "Launch, QA, and handover",
     ],
+    faqs: [
+      {
+        question: "Do I need finished copy before we start?",
+        answer:
+          "No. We use the first planning stage to shape the message, page structure, and offer hierarchy before the visual design is finalised.",
+      },
+      {
+        question: "Can you work with an existing brand?",
+        answer:
+          "Yes. We can either sharpen an existing identity or create a focused web-first direction when the current brand is too thin for a premium site.",
+      },
+      {
+        question: "Will I own the site after launch?",
+        answer:
+          "Yes. The goal is a clean handover: you own the code, the content, and the deployment account connected to the site.",
+      },
+    ],
+    relatedPostHrefs: [
+      "/blog/website-cost-small-business-uk",
+      "/blog/what-makes-a-website-look-expensive",
+    ],
   },
   {
     slug: "seo-optimisation",
     title: "Get found by the right people",
+    lastModified: "2026-04-15",
     description:
       "On-page and technical SEO so you show up when a local client is actively looking to spend money, not just when they're browsing.",
     image: "/images/arches/09-service-thumb-image.webp",
+    ogImage: "/images/arches/09-service-thumb-image.webp",
     href: "/services/seo-optimisation",
     detail:
       "For existing sites that need to rank for the services and areas where your best-paying work comes from.",
+    audience:
+      "Best for businesses with a clear offer and a decent site foundation, but weak metadata, thin service pages, poor local intent coverage, or technical performance issues.",
+    conversionImpact:
+      "We align search intent with page structure, metadata, internal links, schema, and content depth so more of the right visitors land on pages built to convert.",
     deliverables: [
       "Local and service-page SEO plan",
       "Metadata, headings, and schema",
       "Core Web Vitals fixes",
       "Content structure that ranks",
+    ],
+    faqs: [
+      {
+        question: "Should I do SEO before redesigning the site?",
+        answer:
+          "Only if the current site is already clear, fast, and conversion-ready. If it is slow or confusing, fixing the site first usually protects the SEO investment.",
+      },
+      {
+        question: "Do you guarantee rankings?",
+        answer:
+          "No serious SEO provider should. We improve the technical and content foundations that help the right pages compete for the right searches.",
+      },
+      {
+        question: "Is this a monthly retainer?",
+        answer:
+          "The first phase is a focused optimisation project. If ongoing content or local SEO work makes sense after that, we scope it separately.",
+      },
+    ],
+    relatedPostHrefs: [
+      "/blog/seo-or-new-website-first",
+      "/blog/website-cost-small-business-uk",
     ],
   },
 ];
