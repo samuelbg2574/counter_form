@@ -12,7 +12,7 @@ export function ArchesProjects() {
         <div className="arches-section-head">
           <div>
             <h2>Real sites, shipped. Fast, clean, built to sell.</h2>
-            <p>Three builds across photography, local sport, and private tuition — each one designed to turn visitors into booked work.</p>
+            <p>Three builds across photography, local sport, and private tuition. Each one designed to turn visitors into booked work.</p>
           </div>
           <ArchesButton href="/work">VIEW ALL WORK</ArchesButton>
         </div>

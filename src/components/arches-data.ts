@@ -6,7 +6,7 @@ export const projects: Project[] = [
     location: "Fine Art Photography",
     year: "2026",
     title: "2728 Photos",
-    description: "A fine-art photography site that sells atmosphere before it sells prints — so enquiries arrive already convinced.",
+    description: "A fine-art photography site that sells atmosphere before it sells prints, so enquiries arrive already convinced.",
     category: "Portfolio",
     size: "6 page system",
     service: "Web Design",
@@ -88,7 +88,7 @@ export const processSteps: ProcessStep[] = [
   {
     number: "03",
     title: "Design and build",
-    description: "We design and build in weeks, not months. You see progress as we go — no black-box handover at the end.",
+    description: "We design and build in weeks, not months. You see progress as we go. No black-box handover at the end.",
   },
   {
     number: "04",
@@ -103,7 +103,7 @@ export const services: Service[] = [
     slug: "web-design",
     title: "Websites that convert",
     description:
-      "A site that looks like the premium choice, loads in under a second, and turns the right visitors into real enquiries — not tyre-kickers.",
+      "A site that looks like the premium choice, loads in under a second, and turns the right visitors into real enquiries, not tyre-kickers.",
     image: "/images/arches/08-service-thumb-image.jpg",
     href: "/services/web-design",
     detail:
@@ -119,7 +119,7 @@ export const services: Service[] = [
     slug: "seo-optimisation",
     title: "Get found by the right people",
     description:
-      "On-page and technical SEO so you show up when a local client is actively looking to spend money — not just when they're browsing.",
+      "On-page and technical SEO so you show up when a local client is actively looking to spend money, not just when they're browsing.",
     image: "/images/arches/09-service-thumb-image.jpg",
     href: "/services/seo-optimisation",
     detail:
@@ -135,7 +135,7 @@ export const services: Service[] = [
 
 export const proofPoints: ProofPoint[] = [
   {
-    statement: "Your site will load in under a second — or we rebuild it until it does.",
+    statement: "Your site will load in under a second, or we rebuild it until it does.",
     title: "Truly fast",
     detail: "Every build passes Google's Core Web Vitals. Faster sites rank higher and convert more.",
     image: "/images/arches/12-review-image-01.jpg",
@@ -149,7 +149,7 @@ export const proofPoints: ProofPoint[] = [
   {
     statement: "Real photography, custom layout, a visual system that belongs to your business.",
     title: "Built to feel yours",
-    detail: "No stock, no template look. The site feels like yours from the first scroll — not like our last project.",
+    detail: "No stock, no template look. The site feels like yours from the first scroll, not like our last project.",
     image: "/images/arches/14-review-image-03.jpg",
   },
   {
