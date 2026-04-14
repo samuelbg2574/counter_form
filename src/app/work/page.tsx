@@ -14,8 +14,8 @@ export default function WorkPage() {
       <section className="arches-subhero">
         <div className="arches-container">
           <p className="arches-eyebrow">SELECTED WORK</p>
-          <h1>Study directions for websites that need to feel commissioned.</h1>
-          <p>Each project starts from a familiar pattern, then changes the story, pacing, imagery, and interaction model.</p>
+          <h1>Live websites for clients with very different buyer journeys.</h1>
+          <p>Photography, sport, and education projects built around clear positioning, strong first impressions, and fast enquiry paths.</p>
         </div>
       </section>
       <section className="arches-section arches-listing">

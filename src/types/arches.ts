@@ -12,7 +12,13 @@ export type Project = {
   category: string;
   size: string;
   service: string;
-  image: string;
+  images: {
+    row: string;
+    card: string;
+    hero: string;
+  };
+  imageAlt: string;
+  liveUrl: string;
   href: string;
   summary: string;
   challenge: string;

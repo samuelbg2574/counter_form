@@ -71,7 +71,12 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
                   <dd>{project.service}</dd>
                 </div>
               </dl>
-              <ArchesButton href="/contact">BUILD SOMETHING LIKE THIS</ArchesButton>
+              <div className="arches-detail-actions">
+                <ArchesButton href={project.liveUrl} external>
+                  VIEW LIVE SITE
+                </ArchesButton>
+                <ArchesButton href="/contact">BUILD SOMETHING LIKE THIS</ArchesButton>
+              </div>
             </div>
           </div>
         </section>

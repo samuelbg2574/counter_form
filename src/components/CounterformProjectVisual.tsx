@@ -9,14 +9,21 @@ type CounterformProjectVisualProps = {
 };
 
 export function CounterformProjectVisual({ project, priority = false, size = "row" }: CounterformProjectVisualProps) {
+  const image = project.images[size];
+  const dimensions = {
+    row: { width: 932, height: 560 },
+    card: { width: 1180, height: 1000 },
+    hero: { width: undefined, height: undefined },
+  }[size];
+
   return (
     <div className={`counterform-project-visual counterform-project-visual--${size}`}>
       <Image
-        src={project.image}
-        alt={`${project.title} art-directed case study visual`}
+        src={image}
+        alt={project.imageAlt}
         fill={size === "hero"}
-        width={size === "hero" ? undefined : 932}
-        height={size === "hero" ? undefined : 560}
+        width={dimensions.width}
+        height={dimensions.height}
         priority={priority}
         sizes={size === "hero" ? "100vw" : "(max-width: 768px) 100vw, 466px"}
       />
@@ -25,16 +32,6 @@ export function CounterformProjectVisual({ project, priority = false, size = "ro
         <span />
         <span />
         <span />
-      </div>
-      <div className="counterform-project-visual__panel">
-        <span>{project.category}</span>
-        <strong>{project.title}</strong>
-        <small>{project.size}</small>
-      </div>
-      <div className="counterform-project-visual__spec" aria-hidden="true">
-        <span>IA</span>
-        <span>UX</span>
-        <span>NEXT</span>
       </div>
     </div>
   );

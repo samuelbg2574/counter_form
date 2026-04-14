@@ -7,11 +7,17 @@ type ArchesButtonProps = {
   href: string;
   children: ReactNode;
   className?: string;
+  external?: boolean;
 };
 
-export function ArchesButton({ href, children, className }: ArchesButtonProps) {
+export function ArchesButton({ href, children, className, external = false }: ArchesButtonProps) {
   return (
-    <a className={cn("arches-pill", className)} href={href}>
+    <a
+      className={cn("arches-pill", className)}
+      href={href}
+      rel={external ? "noopener noreferrer" : undefined}
+      target={external ? "_blank" : undefined}
+    >
       <span className="arches-pill-icon">
         <ArrowIcon />
       </span>

@@ -11,8 +11,8 @@ export function ArchesProjects() {
         <SectionLabel letter="A" label="SELECTED WORK" />
         <div className="arches-section-head">
           <div>
-            <h2>Proof early, because premium buyers do not wait for the portfolio.</h2>
-            <p>Three study directions show how a template foundation can become a specific commercial story.</p>
+            <h2>Live portfolio work across sharp, service-led websites.</h2>
+            <p>Three recent builds show how the same system adapts to photography, local sport, and private education.</p>
           </div>
           <ArchesButton href="/work">VIEW ALL WORK</ArchesButton>
         </div>
