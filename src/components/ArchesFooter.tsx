@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { LogoMark } from "@/components/icons";
 
-const footerMenu = ["Home", "Studio", "Services", "Projects", "Standard", "Contact"];
+const footerMenu = ["Home", "Process", "Services", "Projects", "Standard", "Contact"];
 const support = ["Template audit", "Motion pass", "Route build"];
 const social = ["LinkedIn", "X", "Instagram", "Email"];
 
@@ -71,7 +71,7 @@ function FooterColumn({ title, items }: { title: string; items: string[] }) {
 function footerHref(item: string) {
   const hrefs: Record<string, string> = {
     Home: "/",
-    Studio: "/#studio",
+    Process: "/#process",
     Services: "/services",
     Projects: "/work",
     Standard: "/#proof",

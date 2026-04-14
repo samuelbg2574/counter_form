@@ -1,4 +1,3 @@
-import { ArchesAbout } from "@/components/ArchesAbout";
 import { ArchesCta } from "@/components/ArchesCta";
 import { ArchesFooter } from "@/components/ArchesFooter";
 import { ArchesHeader } from "@/components/ArchesHeader";
@@ -18,7 +17,6 @@ export default function Home() {
       <ArchesProjects />
       <ArchesServices />
       <ArchesProcess />
-      <ArchesAbout />
       <ArchesTestimonials />
       <ArchesCta />
       <ArchesFooter />

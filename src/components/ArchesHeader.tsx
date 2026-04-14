@@ -4,7 +4,7 @@ import { ChevronDownIcon, LogoMark, MenuIcon } from "@/components/icons";
 
 const pageLinks = [
   { label: "PROCESS", href: "/#process" },
-  { label: "STUDIO", href: "/#studio" },
+  { label: "WORK", href: "/work" },
   { label: "STANDARD", href: "/#proof" },
   { label: "CONTACT", href: "/contact" },
 ];
@@ -13,7 +13,7 @@ export function ArchesHeader() {
   return (
     <header className="arches-header">
       <nav className="arches-header-left" aria-label="Primary">
-        <Link href="/#studio">STUDIO</Link>
+        <Link href="/#process">PROCESS</Link>
         <Link href="/work">WORK</Link>
         <Link href="/services">SERVICES</Link>
         <div className="arches-pages-menu">
