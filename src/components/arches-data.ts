@@ -56,27 +56,27 @@ export const projects: Project[] = [
 
 export const processSteps: ProcessStep[] = [
   {
-    number: "#01",
-    title: "Useful DNA Only",
+    number: "01",
+    title: "Audit",
     description:
-      "Keep the structure that helps the buyer understand the offer. Remove the parts that make the page feel bought.",
+      "We map the cloned structure, source-like patterns, assets, routes, and conversion gaps before changing the surface.",
   },
   {
-    number: "#02",
-    title: "Visible Divergence",
+    number: "02",
+    title: "Direction",
     description:
-      "Fonts, colour, imagery, spacing, and section rhythm must change the first impression before anyone reads the copy.",
+      "We set the audience, offer, palette, type rhythm, and section story so every visual move has a reason.",
   },
   {
-    number: "#03",
-    title: "Commercial Order",
-    description: "Proof, services, process, standards, and contact are arranged around what a buyer needs to believe next.",
+    number: "03",
+    title: "Build",
+    description: "We rebuild the key sections, responsive states, links, and route depth in strict TypeScript with focused components.",
   },
   {
-    number: "#04",
-    title: "Full-System Finish",
+    number: "04",
+    title: "Polish",
     description:
-      "The homepage, routes, responsive states, links, and interaction details have to feel like one commissioned system.",
+      "We tune motion, accessibility, performance, and maintainability so the site feels premium after the first scroll.",
   },
 ];
 

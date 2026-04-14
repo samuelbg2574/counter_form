@@ -9,9 +9,10 @@ export function ArchesProcess() {
       <div className="arches-container">
         <SectionLabel letter="C" label="PROCESS" inverted />
         <div className="arches-process-head">
-          <h2>Four standards we hold every de-template build against.</h2>
+          <h2>A practical path from cloned scaffold to commissioned site.</h2>
           <p>
-            Each pass has to change how the site is perceived, not just what the page says.
+            We keep what is useful, replace what feels generic, and finish the site as a system
+            instead of a single dressed-up page.
           </p>
         </div>
         <div className="arches-standards-grid">
@@ -30,7 +31,7 @@ export function ArchesProcess() {
               <div className="arches-standard-meta">
                 <span>{step.number}</span>
                 <span className="arches-standard-divider" />
-                <span>STANDARD</span>
+                <span>PROCESS</span>
               </div>
               <h3>{step.title}</h3>
               <p>{step.description}</p>
