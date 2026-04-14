@@ -22,7 +22,7 @@ export function ScrollReveal() {
           }
         });
       },
-      { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+      { rootMargin: "0px 0px -60px 0px", threshold: 0.12 }
     );
 
     revealItems.forEach((item) => observer.observe(item));

@@ -57,31 +57,26 @@ export const projects: Project[] = [
 export const processSteps: ProcessStep[] = [
   {
     number: "#01",
-    title: "Extract the Useful DNA",
+    title: "Useful DNA Only",
     description:
-      "We audit the reference template, keep the structural moves that work, and remove the fingerprints that make it feel bought.",
+      "Keep the structure that helps the buyer understand the offer. Remove the parts that make the page feel bought.",
   },
   {
     number: "#02",
-    title: "Reframe the Brand",
+    title: "Visible Divergence",
     description:
-      "We choose a sharper audience, offer, voice, and visual thesis before touching the final layouts.",
+      "Fonts, colour, imagery, spacing, and section rhythm must change the first impression before anyone reads the copy.",
   },
   {
     number: "#03",
-    title: "Restructure the Story",
-    description: "We reorder sections so the page sells logically: proof early, services clearly, process only after interest exists.",
+    title: "Commercial Order",
+    description: "Proof, services, process, standards, and contact are arranged around what a buyer needs to believe next.",
   },
   {
     number: "#04",
-    title: "Add Motion With Purpose",
-    description: "We add scroll, hover, carousel, and entrance moments only where motion clarifies hierarchy or makes the work feel alive.",
-  },
-  {
-    number: "#05",
-    title: "Ship the Full System",
+    title: "Full-System Finish",
     description:
-      "We build the main pages, detail routes, responsive states, and QA checklist so the site holds together beyond the homepage.",
+      "The homepage, routes, responsive states, links, and interaction details have to feel like one commissioned system.",
   },
 ];
 
