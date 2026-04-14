@@ -11,8 +11,8 @@ export function ArchesProjects() {
         <SectionLabel letter="A" label="SELECTED WORK" />
         <div className="arches-section-head">
           <div>
-            <h2>Live portfolio work across sharp, service-led websites.</h2>
-            <p>Three recent builds show how the same system adapts to photography, local sport, and private education.</p>
+            <h2>Real sites, shipped. Fast, clean, built to sell.</h2>
+            <p>Three builds across photography, local sport, and private tuition — each one designed to turn visitors into booked work.</p>
           </div>
           <ArchesButton href="/work">VIEW ALL WORK</ArchesButton>
         </div>

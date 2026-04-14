@@ -8,8 +8,8 @@ export function ArchesCta() {
       <Image src="/images/arches/11-cta-image.jpg" alt="Dark studio workspace" fill sizes="100vw" />
       <div className="arches-cta-shade" />
       <div className="arches-cta-content reveal">
-        <h2>Bring the template. We will turn it into a site that feels commissioned.</h2>
-        <ArchesButton href="/contact">CONTACT US</ArchesButton>
+        <h2>Ready for a site that earns its keep?</h2>
+        <ArchesButton href="/contact">SUBMIT AN ENQUIRY</ArchesButton>
       </div>
     </section>
   );

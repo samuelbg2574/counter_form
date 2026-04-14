@@ -7,13 +7,10 @@ export function ArchesProcess() {
   return (
     <section className="arches-process" id="process">
       <div className="arches-container">
-        <SectionLabel letter="C" label="PROCESS" inverted />
+        <SectionLabel letter="C" label="HOW IT WORKS" inverted />
         <div className="arches-process-head">
-          <h2>A practical path from cloned scaffold to commissioned site.</h2>
-          <p>
-            We keep what is useful, replace what feels generic, and finish the site as a system
-            instead of a single dressed-up page.
-          </p>
+          <h2>From first call to live site in four clear steps.</h2>
+          <p>You stay in the loop. We handle the hard parts.</p>
         </div>
         <div className="arches-standards-grid">
           {processSteps.map((step, index) => (

@@ -9,11 +9,11 @@ export function ArchesServices() {
   return (
     <section className="arches-section arches-services" id="services">
       <div className="arches-container">
-        <SectionLabel letter="B" label="WHAT WE DO" />
+        <SectionLabel letter="B" label="WHAT YOU GET" />
         <div className="arches-section-head">
           <div>
-            <h2>Two focused ways to make the site work harder.</h2>
-            <p>Design the website people judge first, then tune the structure search engines read next.</p>
+            <h2>One site that works harder than any template.</h2>
+            <p>Two services. Both built around one question: is this turning visitors into paying clients?</p>
           </div>
           <ArchesButton href="/services">VIEW ALL SERVICES</ArchesButton>
         </div>

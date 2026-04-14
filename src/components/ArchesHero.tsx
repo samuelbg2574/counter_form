@@ -16,11 +16,11 @@ export function ArchesHero() {
       <div className="arches-hero-shade" />
       <div className="arches-hero-copy">
         <p className="arches-eyebrow">COUNTERFORM STUDIO</p>
-        <h1>Premium web systems from strong templates, rebuilt until they feel owned.</h1>
+        <h1>Look like the premium choice. Win the premium jobs.</h1>
       </div>
       <div className="arches-hero-bottom">
-        <p>We turn cloned foundations into distinctive agency sites with sharper story, motion, and page depth.</p>
-        <ArchesButton href="/work">VIEW WORK</ArchesButton>
+        <p>We design and build fast, premium websites for UK builders, architects, and garden designers — so the enquiries you get are the ones worth quoting.</p>
+        <ArchesButton href="/contact">START YOUR PROJECT</ArchesButton>
       </div>
     </section>
   );

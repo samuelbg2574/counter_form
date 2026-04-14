@@ -13,7 +13,7 @@ export function ArchesFooter() {
             <LogoMark className="arches-logo-word" />
           </Link>
           <p>© 2026 Counterform Studio.</p>
-          <p>Web strategy, design adaptation, and premium builds for service brands.</p>
+          <p>Fast, premium websites for UK builders, architects, and garden designers.</p>
         </div>
         <div className="arches-footer-contact">
           <div>

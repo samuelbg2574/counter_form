@@ -34,7 +34,7 @@ export function ArchesHeader() {
         <LogoMark className="arches-logo-word" />
       </Link>
       <div className="arches-header-right">
-        <Link href="/contact">CONTACT US</Link>
+        <Link href="/contact">START A PROJECT</Link>
         <button className="arches-menu-button" type="button" aria-label="Open menu">
           <MenuIcon />
         </button>
