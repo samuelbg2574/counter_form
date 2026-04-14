@@ -28,11 +28,6 @@ export function CounterformProjectVisual({ project, priority = false, size = "ro
         sizes={size === "hero" ? "100vw" : "(max-width: 768px) 100vw, 466px"}
       />
       <div className="counterform-project-visual__wash" />
-      <div className="counterform-project-visual__chrome" aria-hidden="true">
-        <span />
-        <span />
-        <span />
-      </div>
     </div>
   );
 }

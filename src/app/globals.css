@@ -691,27 +691,6 @@
   position: absolute;
 }
 
-.counterform-project-visual__chrome {
-  align-items: center;
-  background: rgb(255 255 255 / 12%);
-  border: 1px solid rgb(255 255 255 / 20%);
-  display: flex;
-  gap: 6px;
-  height: 30px;
-  left: 18px;
-  padding: 0 10px;
-  position: absolute;
-  right: 18px;
-  top: 18px;
-}
-
-.counterform-project-visual__chrome span {
-  background: rgb(255 255 255 / 72%);
-  border-radius: 50%;
-  height: 6px;
-  width: 6px;
-}
-
 .arches-project-row:hover .counterform-project-visual img,
 .arches-listing-card:hover .counterform-project-visual img {
   filter: grayscale(0) saturate(1) contrast(1.08);
@@ -1858,12 +1837,6 @@
     aspect-ratio: 1.45;
     height: auto;
     width: 100%;
-  }
-
-  .counterform-project-visual__chrome {
-    left: 14px;
-    right: 14px;
-    top: 14px;
   }
 
   .arches-project-details {
