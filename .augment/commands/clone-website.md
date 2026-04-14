@@ -1,8 +1,8 @@
 ---
-description: "Reverse-engineer and clone any website as a pixel-perfect replica"
+description: "Reverse-engineer and clone one or more websites in one shot — extracts assets, CSS, and content section-by-section and proactively dispatches parallel builder agents in worktrees as it goes. Use this whenever the user wants to clone, replicate, rebuild, reverse-engineer, or copy any website. Also triggers on phrases like "make a copy of this site", "rebuild this page", "pixel-perfect clone". Provide one or more target URLs as arguments."
 argument-hint: "<url>"
 ---
-<!-- AUTO-GENERATED from .claude/skills/clone-website/SKILL.md — do not edit directly.
+<!-- AUTO-GENERATED from .claude/skills — do not edit directly.
      Run `node scripts/sync-skills.mjs` to regenerate. -->
 
 

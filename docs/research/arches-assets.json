@@ -1,0 +1,901 @@
+{
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/KMURIQY8Hw04DXnZ56dBlOggA7A.png",
+      "rawSrc": "https://framerusercontent.com/images/KMURIQY8Hw04DXnZ56dBlOggA7A.png",
+      "srcset": "https://framerusercontent.com/images/KMURIQY8Hw04DXnZ56dBlOggA7A.png?scale-down-to=512 512w,https://framerusercontent.com/images/KMURIQY8Hw04DXnZ56dBlOggA7A.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/KMURIQY8Hw04DXnZ56dBlOggA7A.png 1440w",
+      "alt": "Hero Image",
+      "loading": "auto",
+      "naturalWidth": 1440,
+      "naturalHeight": 838,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1200
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "1440px",
+        "height": "1200px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/mz3yZMGA8A6DzdUJ50kvj487jQ.jpg",
+      "rawSrc": "https://framerusercontent.com/images/mz3yZMGA8A6DzdUJ50kvj487jQ.jpg",
+      "srcset": "https://framerusercontent.com/images/mz3yZMGA8A6DzdUJ50kvj487jQ.jpg 700w",
+      "alt": "About Image",
+      "loading": "lazy",
+      "naturalWidth": 279,
+      "naturalHeight": 334,
+      "rect": {
+        "x": 628,
+        "y": 1450,
+        "width": 350,
+        "height": 420
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "350px",
+        "height": "420px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/lvhxp97OWG5zWBYFGyn0XHiVWkI.jpg",
+      "rawSrc": "https://framerusercontent.com/images/lvhxp97OWG5zWBYFGyn0XHiVWkI.jpg",
+      "srcset": "https://framerusercontent.com/images/lvhxp97OWG5zWBYFGyn0XHiVWkI.jpg 700w",
+      "alt": "About Image",
+      "loading": "lazy",
+      "naturalWidth": 279,
+      "naturalHeight": 334,
+      "rect": {
+        "x": 1018,
+        "y": 1450,
+        "width": 350,
+        "height": 420
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "350px",
+        "height": "420px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/A18TvcwYFN38rYqfbosGtxNnILg.jpg",
+      "rawSrc": "https://framerusercontent.com/images/A18TvcwYFN38rYqfbosGtxNnILg.jpg",
+      "srcset": "https://framerusercontent.com/images/A18TvcwYFN38rYqfbosGtxNnILg.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/A18TvcwYFN38rYqfbosGtxNnILg.jpg 932w",
+      "alt": "project thumb image",
+      "loading": "auto",
+      "naturalWidth": 1440,
+      "naturalHeight": 865,
+      "rect": {
+        "x": 487,
+        "y": 2424.81,
+        "width": 466,
+        "height": 280
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "466px",
+        "height": "280px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/RBX8gGCA8UCF09euALti6Fp5WI.jpg",
+      "rawSrc": "https://framerusercontent.com/images/RBX8gGCA8UCF09euALti6Fp5WI.jpg",
+      "srcset": "https://framerusercontent.com/images/RBX8gGCA8UCF09euALti6Fp5WI.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/RBX8gGCA8UCF09euALti6Fp5WI.jpg 932w",
+      "alt": "project thumb image",
+      "loading": "auto",
+      "naturalWidth": 1440,
+      "naturalHeight": 865,
+      "rect": {
+        "x": 487,
+        "y": 2784.81,
+        "width": 466,
+        "height": 280
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "466px",
+        "height": "280px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/2z8bLpFRIMtV2IHA2k3xEYCj7B4.jpg",
+      "rawSrc": "https://framerusercontent.com/images/2z8bLpFRIMtV2IHA2k3xEYCj7B4.jpg",
+      "srcset": "https://framerusercontent.com/images/2z8bLpFRIMtV2IHA2k3xEYCj7B4.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/2z8bLpFRIMtV2IHA2k3xEYCj7B4.jpg 932w",
+      "alt": "project thumb image",
+      "loading": "auto",
+      "naturalWidth": 1440,
+      "naturalHeight": 865,
+      "rect": {
+        "x": 487,
+        "y": 3144.81,
+        "width": 466,
+        "height": 280
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "466px",
+        "height": "280px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/DV0xVxYyQ3jxVaAZAh6i4dIQNvM.jpg",
+      "rawSrc": "https://framerusercontent.com/images/DV0xVxYyQ3jxVaAZAh6i4dIQNvM.jpg",
+      "srcset": null,
+      "alt": "service thumb image",
+      "loading": "lazy",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 1218,
+        "y": 4915.63,
+        "width": 150,
+        "height": 150
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "150px",
+        "height": "150px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/JMW504M8s6UyHwptpkZqGOmPkk8.jpg",
+      "rawSrc": "https://framerusercontent.com/images/JMW504M8s6UyHwptpkZqGOmPkk8.jpg",
+      "srcset": null,
+      "alt": "service thumb image",
+      "loading": "lazy",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 1218,
+        "y": 5125.63,
+        "width": 150,
+        "height": 150
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "150px",
+        "height": "150px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/962FJUk5yYYEXhtV1XBKd26IzI.jpg?scale-down-to=512",
+      "rawSrc": "https://framerusercontent.com/images/962FJUk5yYYEXhtV1XBKd26IzI.jpg",
+      "srcset": "https://framerusercontent.com/images/962FJUk5yYYEXhtV1XBKd26IzI.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/962FJUk5yYYEXhtV1XBKd26IzI.jpg 560w",
+      "alt": "service thumb image",
+      "loading": "lazy",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "rect": {
+        "x": 1218,
+        "y": 5335.63,
+        "width": 150,
+        "height": 150
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "150px",
+        "height": "150px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/cmDAR9MqFA7gUZo6Jcdv5nQnp1k.jpg?scale-down-to=512",
+      "rawSrc": "https://framerusercontent.com/images/cmDAR9MqFA7gUZo6Jcdv5nQnp1k.jpg",
+      "srcset": "https://framerusercontent.com/images/cmDAR9MqFA7gUZo6Jcdv5nQnp1k.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/cmDAR9MqFA7gUZo6Jcdv5nQnp1k.jpg 560w",
+      "alt": "service thumb image",
+      "loading": "lazy",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "rect": {
+        "x": 1218,
+        "y": 5545.63,
+        "width": 150,
+        "height": 150
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "150px",
+        "height": "150px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/pq9gyrndqjSQD0beKp8H4XWFuaE.jpg?scale-down-to=2048",
+      "rawSrc": "https://framerusercontent.com/images/pq9gyrndqjSQD0beKp8H4XWFuaE.jpg",
+      "srcset": "https://framerusercontent.com/images/pq9gyrndqjSQD0beKp8H4XWFuaE.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/pq9gyrndqjSQD0beKp8H4XWFuaE.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/pq9gyrndqjSQD0beKp8H4XWFuaE.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/pq9gyrndqjSQD0beKp8H4XWFuaE.jpg 2880w",
+      "alt": "Cta Image",
+      "loading": "lazy",
+      "naturalWidth": 1440,
+      "naturalHeight": 395,
+      "rect": {
+        "x": 0,
+        "y": 5875.63,
+        "width": 1440,
+        "height": 351
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "1440px",
+        "height": "351px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/n4uZsqZ2BGVAkPsGoAmMnaKj3GY.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/n4uZsqZ2BGVAkPsGoAmMnaKj3GY.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/n4uZsqZ2BGVAkPsGoAmMnaKj3GY.jpg?width=648&height=740 648w",
+      "alt": "Review Image 01",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 98,
+        "y": 6718.98,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/2oAeluMQPNgdEBCAJu2aFpwc.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/2oAeluMQPNgdEBCAJu2aFpwc.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/2oAeluMQPNgdEBCAJu2aFpwc.jpg?width=648&height=740 648w",
+      "alt": "Review Image 02",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 544,
+        "y": 6718.98,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/idi5KfUA7guYCsFsnXJa00aKRM.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/idi5KfUA7guYCsFsnXJa00aKRM.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/idi5KfUA7guYCsFsnXJa00aKRM.jpg?width=648&height=740 648w",
+      "alt": "Review Image 03",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 990,
+        "y": 6688.39,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/LJNy5pjzCBTArxSsaqVbojRNyM.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/LJNy5pjzCBTArxSsaqVbojRNyM.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/LJNy5pjzCBTArxSsaqVbojRNyM.jpg?width=648&height=740 648w",
+      "alt": "Review Image 04",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 1436,
+        "y": 6688.39,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/1RrqxOKx120zygPDqIUM6btjI.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/1RrqxOKx120zygPDqIUM6btjI.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/1RrqxOKx120zygPDqIUM6btjI.jpg?width=648&height=740 648w",
+      "alt": "Review Image 05",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 1882,
+        "y": 6718.98,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/oRbDs0zcgDLqNLduuuJ3V8FZms.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/oRbDs0zcgDLqNLduuuJ3V8FZms.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/oRbDs0zcgDLqNLduuuJ3V8FZms.jpg?width=648&height=740 648w",
+      "alt": "Review Image 06",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 2328,
+        "y": 6688.39,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/6GkQsk5LHAYUckjEgXVw9yGEE9w.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/6GkQsk5LHAYUckjEgXVw9yGEE9w.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/6GkQsk5LHAYUckjEgXVw9yGEE9w.jpg?width=648&height=740 648w",
+      "alt": "Review Image 07",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 2774,
+        "y": 6688.39,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/idi5KfUA7guYCsFsnXJa00aKRM.jpg?width=648&height=740",
+      "rawSrc": "https://framerusercontent.com/images/idi5KfUA7guYCsFsnXJa00aKRM.jpg?width=648&height=740",
+      "srcset": "https://framerusercontent.com/images/idi5KfUA7guYCsFsnXJa00aKRM.jpg?width=648&height=740 648w",
+      "alt": "Review Image 08",
+      "loading": "auto",
+      "naturalWidth": 42,
+      "naturalHeight": 47,
+      "rect": {
+        "x": 3220,
+        "y": 6718.98,
+        "width": 42,
+        "height": 42
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "42px",
+        "height": "42px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg",
+      "rawSrc": "https://framerusercontent.com/images/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg",
+      "srcset": null,
+      "alt": "",
+      "loading": "auto",
+      "naturalWidth": 40,
+      "naturalHeight": 40,
+      "rect": {
+        "x": 52,
+        "y": 6625.5,
+        "width": 44,
+        "height": 44
+      },
+      "parent": "button",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "44px",
+        "height": "44px",
+        "display": "inline",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "default",
+        "objectFit": "fill"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg",
+      "rawSrc": "https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg",
+      "srcset": null,
+      "alt": "",
+      "loading": "auto",
+      "naturalWidth": 40,
+      "naturalHeight": 40,
+      "rect": {
+        "x": 1344,
+        "y": 6625.5,
+        "width": 44,
+        "height": 44
+      },
+      "parent": "button",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 0)",
+        "width": "44px",
+        "height": "44px",
+        "display": "inline",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 0)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "fill"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/DtomxTruBvuY8LYozeA4kmCJ8ew.jpg?scale-down-to=512",
+      "rawSrc": "https://framerusercontent.com/images/DtomxTruBvuY8LYozeA4kmCJ8ew.jpg",
+      "srcset": "https://framerusercontent.com/images/DtomxTruBvuY8LYozeA4kmCJ8ew.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/DtomxTruBvuY8LYozeA4kmCJ8ew.jpg 760w",
+      "alt": "blog thumb image",
+      "loading": "lazy",
+      "naturalWidth": 379,
+      "naturalHeight": 238,
+      "rect": {
+        "x": 988,
+        "y": 7306.39,
+        "width": 380,
+        "height": 237.98
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "380px",
+        "height": "237.984px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/oZ3LWdzvTT3IYX4MOScNmDkIiU.jpg?scale-down-to=512",
+      "rawSrc": "https://framerusercontent.com/images/oZ3LWdzvTT3IYX4MOScNmDkIiU.jpg",
+      "srcset": "https://framerusercontent.com/images/oZ3LWdzvTT3IYX4MOScNmDkIiU.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/oZ3LWdzvTT3IYX4MOScNmDkIiU.jpg 760w",
+      "alt": "blog thumb image",
+      "loading": "lazy",
+      "naturalWidth": 379,
+      "naturalHeight": 238,
+      "rect": {
+        "x": 988,
+        "y": 7624.38,
+        "width": 380,
+        "height": 237.98
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "380px",
+        "height": "237.984px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    },
+    {
+      "src": "https://framerusercontent.com/images/YOV9cjzXGs79SeqqxictaVgF8qE.jpg?scale-down-to=512",
+      "rawSrc": "https://framerusercontent.com/images/YOV9cjzXGs79SeqqxictaVgF8qE.jpg",
+      "srcset": "https://framerusercontent.com/images/YOV9cjzXGs79SeqqxictaVgF8qE.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/YOV9cjzXGs79SeqqxictaVgF8qE.jpg 760w",
+      "alt": "blog thumb image",
+      "loading": "lazy",
+      "naturalWidth": 379,
+      "naturalHeight": 238,
+      "rect": {
+        "x": 988,
+        "y": 7942.36,
+        "width": 380,
+        "height": 237.98
+      },
+      "parent": "div",
+      "siblings": 1,
+      "styles": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "fontFamily": "sans-serif",
+        "color": "rgb(0, 0, 238)",
+        "width": "380px",
+        "height": "237.984px",
+        "display": "block",
+        "flexDirection": "row",
+        "borderColor": "rgb(0, 0, 238)",
+        "overflow": "clip",
+        "position": "static",
+        "opacity": "1",
+        "transition": "all",
+        "cursor": "pointer",
+        "objectFit": "cover"
+      }
+    }
+  ],
+  "backgroundImages": [],
+  "videos": [],
+  "icons": [
+    {
+      "rel": "icon",
+      "href": "https://framerusercontent.com/images/vSxASF6HellFjoLoahwKXvOFa4.svg",
+      "sizes": null,
+      "type": null
+    },
+    {
+      "rel": "icon",
+      "href": "https://framerusercontent.com/images/vSxASF6HellFjoLoahwKXvOFa4.svg",
+      "sizes": null,
+      "type": null
+    }
+  ],
+  "meta": [
+    {
+      "name": null,
+      "property": null,
+      "content": null
+    },
+    {
+      "name": "viewport",
+      "property": null,
+      "content": "width=device-width"
+    },
+    {
+      "name": "generator",
+      "property": null,
+      "content": "Framer 571faa6"
+    },
+    {
+      "name": "description",
+      "property": null,
+      "content": "Find top Framer website templates for architecture and interior design. Create a professional look that attracts clients. Browse options today."
+    },
+    {
+      "name": "framer-search-index",
+      "property": null,
+      "content": "https://framerusercontent.com/sites/01sQhmnskOeLJUCrADNxm/searchIndex-GiVdKhxRGn6x.json"
+    },
+    {
+      "name": null,
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "name": null,
+      "property": "og:title",
+      "content": "Stylish Framer templates for architecture and interior shows"
+    },
+    {
+      "name": null,
+      "property": "og:description",
+      "content": "Find top Framer website templates for architecture and interior design. Create a professional look that attracts clients. Browse options today."
+    },
+    {
+      "name": null,
+      "property": "og:image",
+      "content": "https://framerusercontent.com/assets/JhOeASVC4IAjCrHTU1T11tDrjU.jpg"
+    },
+    {
+      "name": "twitter:card",
+      "property": null,
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:title",
+      "property": null,
+      "content": "Stylish Framer templates for architecture and interior shows"
+    },
+    {
+      "name": "twitter:description",
+      "property": null,
+      "content": "Find top Framer website templates for architecture and interior design. Create a professional look that attracts clients. Browse options today."
+    },
+    {
+      "name": "twitter:image",
+      "property": null,
+      "content": "https://framerusercontent.com/assets/JhOeASVC4IAjCrHTU1T11tDrjU.jpg"
+    },
+    {
+      "name": "robots",
+      "property": null,
+      "content": "max-image-preview:large"
+    },
+    {
+      "name": null,
+      "property": "og:url",
+      "content": "https://arches-template.framer.website/"
+    }
+  ]
+}
