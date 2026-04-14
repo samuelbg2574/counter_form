@@ -48,11 +48,21 @@ export type ProofPoint = {
   image: string;
 };
 
+export type BlogSection = {
+  heading?: string;
+  paragraphs: string[];
+};
+
 export type BlogPost = {
+  slug: string;
   date: string;
+  dateISO: string;
   category: string;
   title: string;
   summary: string;
   image: string;
   href: string;
+  readTime: string;
+  intro: string;
+  sections: BlogSection[];
 };

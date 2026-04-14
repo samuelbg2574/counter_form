@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import { ArchesButton } from "@/components/ArchesButton";
 import { ArchesFooter } from "@/components/ArchesFooter";
 import { ArchesHeader } from "@/components/ArchesHeader";
@@ -5,6 +7,13 @@ import { CounterformProjectVisual } from "@/components/CounterformProjectVisual"
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { projects } from "@/components/arches-data";
+
+export const metadata: Metadata = {
+  title: "Selected Work — Premium Websites for UK Independents",
+  description:
+    "Live websites shipped by Counterform Studio. Photography, sport, and education projects built around clear positioning and fast enquiry paths.",
+  alternates: { canonical: "/work" },
+};
 
 export default function WorkPage() {
   return (

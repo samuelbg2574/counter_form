@@ -4,8 +4,10 @@ import { ArchesHeader } from "@/components/ArchesHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "Contact | Counterform Studio",
-  description: "Book a project review for a premium template-to-custom web build.",
+  title: "Contact — Book a Project Review",
+  description:
+    "Book a free 30-minute project call with Counterform Studio. Premium websites for UK independents, fixed price and fixed timeline.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

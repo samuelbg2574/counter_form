@@ -20,8 +20,9 @@ export async function generateMetadata({ params }: ServiceDetailPageProps) {
   const service = services.find((item) => item.slug === slug);
 
   return {
-    title: service ? `${service.title} | Counterform Studio` : "Services | Counterform Studio",
+    title: service ? service.title : "Services",
     description: service?.description,
+    alternates: { canonical: service ? service.href : "/services" },
   };
 }
 

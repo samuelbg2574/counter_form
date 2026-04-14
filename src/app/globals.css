@@ -2,36 +2,12 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/poppins-400.ttf") format("truetype");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/poppins-500.ttf") format("truetype");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/poppins-700.ttf") format("truetype");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -174,7 +150,7 @@
 .arches-page {
   background: #ffffff;
   color: var(--arches-ink);
-  font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -1374,7 +1350,7 @@
 .arches-subhero {
   background:
     linear-gradient(135deg, rgb(13 27 42 / 92%), rgb(27 38 59 / 88%)),
-    url("/images/arches/11-cta-image.jpg") center / cover;
+    url("/images/arches/11-cta-image.webp") center / cover;
   color: #ffffff;
   min-height: 560px;
   padding: 180px 0 90px;
@@ -2099,6 +2075,93 @@
   .arches-detail-body,
   .arches-contact {
     padding-bottom: 80px;
+  }
+}
+
+.arches-blog-article-image {
+  border-radius: 18px;
+  height: auto;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.arches-blog-article-body {
+  display: grid;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.arches-blog-article-intro {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.arches-blog-article-section h2 {
+  font-size: 26px;
+  line-height: 34px;
+  margin: 8px 0 16px;
+}
+
+.arches-blog-article-section p {
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0 0 16px;
+}
+
+.arches-blog-article-cta {
+  background: var(--arches-ink, #0d1b2a);
+  border-radius: 18px;
+  color: #ffffff;
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 36px;
+}
+
+.arches-blog-article-cta h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.arches-blog-article-cta p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.arches-blog-article-more {
+  border-top: 1px solid rgb(13 27 42 / 12%);
+  margin: 64px auto 0;
+  max-width: 720px;
+  padding-top: 32px;
+}
+
+.arches-blog-article-more h3 {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.arches-blog-article-more ul {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.arches-blog-article-more a {
+  color: var(--arches-ink, #0d1b2a);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .arches-blog-article-cta {
+    padding: 28px 22px;
   }
 }
 

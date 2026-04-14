@@ -11,9 +11,9 @@ export const projects: Project[] = [
     size: "6 page system",
     service: "Web Design",
     images: {
-      row: "/images/counterform/work/2728-photos-row.png",
-      card: "/images/counterform/work/2728-photos-card.png",
-      hero: "/images/counterform/work/2728-photos-hero.png",
+      row: "/images/counterform/work/2728-photos-row.webp",
+      card: "/images/counterform/work/2728-photos-card.webp",
+      hero: "/images/counterform/work/2728-photos-hero.webp",
     },
     imageAlt: "Homepage hero screenshot of the 2728 Photos fine art photography website.",
     liveUrl: "https://george-photo-site.vercel.app/",
@@ -34,9 +34,9 @@ export const projects: Project[] = [
     size: "5 page site",
     service: "Web Design",
     images: {
-      row: "/images/counterform/work/touch-point-judo-row.png",
-      card: "/images/counterform/work/touch-point-judo-card.png",
-      hero: "/images/counterform/work/touch-point-judo-hero.png",
+      row: "/images/counterform/work/touch-point-judo-row.webp",
+      card: "/images/counterform/work/touch-point-judo-card.webp",
+      hero: "/images/counterform/work/touch-point-judo-hero.webp",
     },
     imageAlt: "Homepage hero screenshot of the Touch Point Judo Academy website.",
     liveUrl: "https://touchpointjudo-mockup.vercel.app/",
@@ -57,9 +57,9 @@ export const projects: Project[] = [
     size: "8 page system",
     service: "Web Design + SEO",
     images: {
-      row: "/images/counterform/work/ttm-tutoring-row.png",
-      card: "/images/counterform/work/ttm-tutoring-card.png",
-      hero: "/images/counterform/work/ttm-tutoring-hero.png",
+      row: "/images/counterform/work/ttm-tutoring-row.webp",
+      card: "/images/counterform/work/ttm-tutoring-card.webp",
+      hero: "/images/counterform/work/ttm-tutoring-hero.webp",
     },
     imageAlt: "Homepage hero screenshot of the TTM Tutoring private tuition website.",
     liveUrl: "https://ttm-website-three.vercel.app/",
@@ -104,10 +104,10 @@ export const services: Service[] = [
     title: "Websites that convert",
     description:
       "A site that looks like the premium choice, loads in under a second, and turns the right visitors into real enquiries, not tyre-kickers.",
-    image: "/images/arches/08-service-thumb-image.jpg",
+    image: "/images/arches/08-service-thumb-image.webp",
     href: "/services/web-design",
     detail:
-      "For UK builders, architects, and garden designers who want their website to match the quality of the work they do.",
+      "For UK independents whose website needs to match the quality of the work they sell.",
     deliverables: [
       "Positioning and homepage strategy",
       "Responsive design across every page",
@@ -120,7 +120,7 @@ export const services: Service[] = [
     title: "Get found by the right people",
     description:
       "On-page and technical SEO so you show up when a local client is actively looking to spend money, not just when they're browsing.",
-    image: "/images/arches/09-service-thumb-image.jpg",
+    image: "/images/arches/09-service-thumb-image.webp",
     href: "/services/seo-optimisation",
     detail:
       "For existing sites that need to rank for the services and areas where your best-paying work comes from.",
@@ -138,54 +138,195 @@ export const proofPoints: ProofPoint[] = [
     statement: "Your site will load in under a second, or we rebuild it until it does.",
     title: "Truly fast",
     detail: "Every build passes Google's Core Web Vitals. Faster sites rank higher and convert more.",
-    image: "/images/arches/12-review-image-01.jpg",
+    image: "/images/arches/12-review-image-01.webp",
   },
   {
     statement: "Every page is built around one question: what does a buyer need to see next?",
     title: "Designed to sell",
     detail: "We plan the buyer journey before we touch a single pixel. No decoration for decoration's sake.",
-    image: "/images/arches/13-review-image-02.jpg",
+    image: "/images/arches/13-review-image-02.webp",
   },
   {
     statement: "Real photography, custom layout, a visual system that belongs to your business.",
     title: "Built to feel yours",
     detail: "No stock, no template look. The site feels like yours from the first scroll, not like our last project.",
-    image: "/images/arches/14-review-image-03.jpg",
+    image: "/images/arches/14-review-image-03.webp",
   },
   {
     statement: "Fixed prices, fixed timelines, zero scope creep.",
     title: "Straight terms",
     detail: "You know the cost and the delivery date before we start. We'd rather quote fairly than surprise you later.",
-    image: "/images/arches/15-review-image-04.jpg",
+    image: "/images/arches/15-review-image-04.webp",
   },
 ];
 
 export const blogPosts: BlogPost[] = [
   {
-    date: "Apr 14, 2026",
-    category: "Template Audit",
-    title: "How To Spot A Homepage That Still Feels Like A Template",
+    slug: "website-cost-small-business-uk",
+    date: "Apr 12, 2026",
+    dateISO: "2026-04-12",
+    category: "Pricing",
+    title: "How Much Does a Website Cost for a Small Business in the UK?",
     summary:
-      "A practical pass through section order, stock imagery, generic claims, and interaction details that usually give a cloned site away.",
-    image: "/images/arches/21-blog-thumb-image.jpg",
-    href: "/#proof",
+      "Real price bands for UK small business websites in 2026, what you actually get at each level, and how to tell which one will pay for itself.",
+    image: "/images/arches/21-blog-thumb-image.webp",
+    href: "/blog/website-cost-small-business-uk",
+    readTime: "6 min read",
+    intro:
+      "If you're an independent business in the UK looking for a new website, the price range you'll be quoted is wider than almost any other service you buy. A DIY template can cost £12 a month. A branding-led studio can quote £25,000. Both call themselves \"a website.\" This guide explains what sits at each band, what makes a site pay for itself, and which tier fits a business trying to charge premium prices.",
+    sections: [
+      {
+        heading: "The four real price bands in 2026",
+        paragraphs: [
+          "Band 1 (£0–£500): DIY on Wix, Squarespace, or a cheap Upwork developer. You get a site that technically works. You do not get positioning, a considered visual system, or fast load times. If you are testing a side project, this is fine. If you charge premium prices for your core work, a site at this level actively costs you jobs.",
+          "Band 2 (£1,500–£4,000): A freelancer using a template. Better photography, a coherent layout, and usually a functional contact form. Most small UK businesses sit here. The ceiling is that the site still looks like something a buyer has seen before, because it is.",
+          "Band 3 (£4,000–£12,000): A small studio doing custom design on top of a modern framework (Next.js, Astro, or similar). Original photography, a purpose-built visual system, real attention to speed and SEO. This is the first band where the site can genuinely help you charge more.",
+          "Band 4 (£15,000+): Branding-led agencies, typically for funded startups or established firms repositioning. Full brand system, art direction, motion work, copywriting, and a bespoke CMS. Excellent, but usually overkill for an independent business chasing the first £100k in revenue.",
+        ],
+      },
+      {
+        heading: "What actually makes a site pay for itself",
+        paragraphs: [
+          "A site only earns its cost back when it does three things: load fast, say something specific, and route the right buyer to a clear next step. Speed under one second is a real conversion lever, not a bragging right — Google's own research shows conversion drops 20% for every extra second of load time.",
+          "Specificity beats polish. A beautiful homepage that could belong to any business in the same industry will lose to an average-looking homepage that names the exact customer and the exact problem. The buyer has to feel recognised inside the first scroll.",
+          "The next step has to be obvious and low-friction. A single primary CTA, a visible phone number, and a short contact form outperform a dense site with four competing calls to action.",
+        ],
+      },
+      {
+        heading: "What to budget if you charge premium prices",
+        paragraphs: [
+          "If your average project or sale is £5,000 or more, spending less than £3,000 on your website is usually a mistake. The buyer is already comparing you to competitors whose sites look considered. If your site looks like everyone else's, you've given them permission to negotiate on price.",
+          "A realistic budget for a premium-feeling site built on a modern stack, with real photography and SEO-ready structure, is £4,000 to £8,000. It should ship in weeks, not months, and it should have a fixed price and a fixed timeline. If a studio won't commit to both, that's a signal their process isn't tight enough to protect your time.",
+        ],
+      },
+      {
+        heading: "Questions to ask before you pay a deposit",
+        paragraphs: [
+          "Who will my site load faster than: my direct competitors, or a generic Squarespace template? How will you prove it on launch day?",
+          "What is the single sentence the homepage is trying to prove? Show me the evidence stack that supports it.",
+          "If I change my mind about a major decision in week three, what does that cost me? Fixed-price studios should have a clear answer.",
+          "Who owns the code and the domain on launch day? If the answer is anything other than \"you do,\" walk away.",
+        ],
+      },
+    ],
   },
   {
-    date: "Apr 09, 2026",
-    category: "Motion",
-    title: "Where Scroll Animation Actually Helps A Service Site",
+    slug: "what-makes-a-website-look-expensive",
+    date: "Apr 04, 2026",
+    dateISO: "2026-04-04",
+    category: "Design",
+    title: "What Makes a Website Look Expensive: 10 Signals Buyers Notice",
     summary:
-      "Motion earns its place when it clarifies order, adds tactile feedback, or makes dense work pages easier to scan.",
-    image: "/images/arches/22-blog-thumb-image.jpg",
-    href: "/#proof",
+      "The specific design and content choices that move a website from 'looks fine' to 'looks like I can charge 30% more.' Nothing abstract, all observable.",
+    image: "/images/arches/22-blog-thumb-image.webp",
+    href: "/blog/what-makes-a-website-look-expensive",
+    readTime: "5 min read",
+    intro:
+      "Buyers form a price expectation inside the first three seconds of a homepage, and they do it from a handful of visual cues. Most are specific enough to copy, and copying the wrong ones is why many small-business sites end up feeling mid-market even when the underlying work is premium. These are the ten signals that move a site up.",
+    sections: [
+      {
+        heading: "1. Speed",
+        paragraphs: [
+          "An expensive-feeling site loads under a second. A slow site, no matter how beautifully art-directed, communicates low budget. This is the first signal, and it is the one most small-business websites fail.",
+        ],
+      },
+      {
+        heading: "2. Real photography",
+        paragraphs: [
+          "Stock imagery is the single strongest tell that a site is a template. Buyers can't always name it, but they register it instantly. Commissioned photography, even of just one or two scenes, reframes everything around it.",
+        ],
+      },
+      {
+        heading: "3. A specific first sentence",
+        paragraphs: [
+          "Expensive sites name the customer in the hero headline. They don't say \"premium solutions for modern businesses\" — they say \"websites for UK independents who charge premium prices,\" or \"kitchen extensions for Cotswold homeowners.\" Specificity reads as confidence.",
+        ],
+      },
+      {
+        heading: "4. Generous whitespace",
+        paragraphs: [
+          "Cheap sites cram. Expensive sites breathe. If every section is shouting, nothing gets heard. Whitespace is an indirect way to say \"we have nothing to hide and plenty to show.\"",
+        ],
+      },
+      {
+        heading: "5. One typeface, used well",
+        paragraphs: [
+          "Premium sites tend to commit to one typeface in two or three weights. Bargain sites mix three typefaces in six weights because the designer was hedging. Restraint reads as taste.",
+        ],
+      },
+      {
+        heading: "6. A restrained colour palette",
+        paragraphs: [
+          "Two neutrals and one accent is nearly always enough. Rainbow palettes are a template giveaway. The best accent colour is one the competitor set isn't already using.",
+        ],
+      },
+      {
+        heading: "7. Purposeful motion",
+        paragraphs: [
+          "A fade-up on scroll is fine. Six different animations firing at once is not. Motion should clarify where the eye goes next, not prove the developer learned Framer Motion.",
+        ],
+      },
+      {
+        heading: "8. Evidence, not adjectives",
+        paragraphs: [
+          "Weak sites say \"award-winning service.\" Strong sites show the award, the date, the project, or the number. Every adjective on a premium site has a piece of evidence within scrolling distance.",
+        ],
+      },
+      {
+        heading: "9. A considered contact page",
+        paragraphs: [
+          "A tiny, easy form with three fields says \"we value your time.\" A twelve-field form says \"we batch-process leads.\" A contact page with a real photo and a named person beats a generic form every time.",
+        ],
+      },
+      {
+        heading: "10. No visible template skeleton",
+        paragraphs: [
+          "Faint giveaways: the identical three-column service grid, the generic \"our process\" numbered list, the testimonial slider that nobody interacts with. Remove or rework these, and a mid-market site often climbs a full tier.",
+        ],
+      },
+    ],
   },
   {
-    date: "Mar 27, 2026",
-    category: "Case Studies",
-    title: "Why Work Pages Need A Narrative, Not A Grid Of Thumbnails",
+    slug: "seo-or-new-website-first",
+    date: "Mar 28, 2026",
+    dateISO: "2026-03-28",
+    category: "SEO",
+    title: "Do I Need SEO or a New Website First? A Guide for UK Independents",
     summary:
-      "Premium buyers need to understand the problem, the decision path, and the result before a project gallery can do its job.",
-    image: "/images/arches/23-blog-thumb-image.jpg",
-    href: "/#proof",
+      "A clear decision framework for deciding whether to invest in SEO, a rebuild, or both. Written for UK independents with a limited first marketing budget.",
+    image: "/images/arches/23-blog-thumb-image.webp",
+    href: "/blog/seo-or-new-website-first",
+    readTime: "4 min read",
+    intro:
+      "Most UK independents with a limited first marketing budget face the same question: should I spend it on SEO to bring people to my existing site, or on a new site first so the people who do arrive actually convert? The answer depends on two numbers and one piece of common sense. This guide walks you through both.",
+    sections: [
+      {
+        heading: "The conversion-rate test",
+        paragraphs: [
+          "Look at Google Analytics or your site dashboard. What percentage of visitors reach your contact or enquiry page? For service businesses, anything under 2% is a sign that traffic is not your main problem. If you doubled your traffic tomorrow with the same conversion rate, you'd double your enquiries — and most under-performing sites will not double them, because the site itself is the bottleneck.",
+          "If your conversion rate is above 3% and your site is genuinely clear and fast, then SEO is the right next investment. If it's below 2%, a rebuild usually pays for itself faster than any SEO retainer.",
+        ],
+      },
+      {
+        heading: "The speed-and-structure test",
+        paragraphs: [
+          "Run your homepage through Google's PageSpeed Insights. If you see red or amber scores on Core Web Vitals, no amount of SEO money will move you up the rankings. Google has been explicit that site experience is a ranking factor, and a slow site caps how high you can climb even with perfect content.",
+          "If you score green on both mobile and desktop, and your on-page content is clearly structured, SEO spend will pay off. If you don't, fix the foundation first.",
+        ],
+      },
+      {
+        heading: "The honest-mirror test",
+        paragraphs: [
+          "Ask three people in your target market to open your site for ten seconds, then tell you what you do, who you do it for, and what it might cost. If they can't answer confidently, no SEO effort will fix the underlying problem. Traffic is just amplified first impressions — an SEO budget on an unclear site is a budget that pays Google to embarrass you in front of more people.",
+        ],
+      },
+      {
+        heading: "What to do if the budget is tight",
+        paragraphs: [
+          "The cheapest version of the right answer is a tight, fast, purpose-built site with SEO fundamentals built in from day one — clean metadata, a proper heading structure, schema markup, and a content plan that covers the three or four queries your best-paying clients actually search for. You get both jobs done, you don't carry technical debt into an SEO retainer, and the site itself converts the traffic you already have.",
+          "If you can only afford one, fix the site first. Rankings built on a slow, unclear site are a temporary advantage. Rankings earned on a sharp, fast site compound.",
+        ],
+      },
+    ],
   },
 ];

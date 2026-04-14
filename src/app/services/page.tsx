@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import type { CSSProperties } from "react";
 
@@ -7,6 +8,13 @@ import { ArchesHeader } from "@/components/ArchesHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { services } from "@/components/arches-data";
+
+export const metadata: Metadata = {
+  title: "Services — Web Design and SEO for UK Independents",
+  description:
+    "Premium web design and SEO services for UK independents who want a site that matches the quality of the work they sell.",
+  alternates: { canonical: "/services" },
+};
 
 export default function ServicesPage() {
   return (

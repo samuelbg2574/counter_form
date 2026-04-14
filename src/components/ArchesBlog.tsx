@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { ArchesButton } from "@/components/ArchesButton";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -9,17 +10,17 @@ export function ArchesBlog() {
   return (
     <section className="arches-section arches-blog" id="blog">
       <div className="arches-container">
-        <SectionLabel letter="F" label="NEWS" />
+        <SectionLabel letter="F" label="JOURNAL" />
         <div className="arches-section-head arches-blog-head">
-          <h2>Latest Blog Posts</h2>
-          <ArchesButton href="/#proof">LEARN MORE</ArchesButton>
+          <h2>Practical writing for independents charging premium prices.</h2>
+          <ArchesButton href="/blog">READ THE JOURNAL</ArchesButton>
         </div>
         <div className="arches-blog-list">
           {blogPosts.map((post) => (
-            <a className="arches-blog-row reveal" href={post.href} key={post.title}>
+            <Link className="arches-blog-row reveal" href={post.href} key={post.slug}>
               <div className="arches-blog-copy">
                 <p>
-                  {post.date} <span>-</span> {post.category}
+                  {post.date} <span>-</span> {post.category} <span>-</span> {post.readTime}
                 </p>
                 <h3>{post.title}</h3>
                 <span>{post.summary}</span>
@@ -28,8 +29,8 @@ export function ArchesBlog() {
                   <MoreIcon />
                 </strong>
               </div>
-              <Image src={post.image} alt="blog thumb image" width={760} height={476} />
-            </a>
+              <Image src={post.image} alt={post.title} width={760} height={476} />
+            </Link>
           ))}
         </div>
       </div>

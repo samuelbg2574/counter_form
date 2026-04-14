@@ -1,11 +1,61 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
 import "./globals.css";
 
+const poppins = localFont({
+  src: [
+    { path: "../../public/fonts/poppins-400.ttf", weight: "400", style: "normal" },
+    { path: "../../public/fonts/poppins-500.ttf", weight: "500", style: "normal" },
+    { path: "../../public/fonts/poppins-700.ttf", weight: "700", style: "normal" },
+  ],
+  variable: "--font-poppins",
+  display: "swap",
+  preload: true,
+});
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://counterform.studio";
+
 export const metadata: Metadata = {
-  title: "Counterform Studio",
-  description: "Premium web systems from strong templates, rebuilt until they feel owned.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Counterform Studio — Premium Websites for UK Independents",
+    template: "%s | Counterform Studio",
+  },
+  description:
+    "Fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline, built in Next.js for real speed.",
+  keywords: [
+    "premium website design UK",
+    "web design for small business UK",
+    "Next.js web design studio",
+    "premium website for independent business",
+    "UK web design studio",
+    "fast website design",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "Counterform Studio",
+    title: "Counterform Studio — Premium Websites for UK Independents",
+    description:
+      "Fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline, built for real speed.",
+    locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Counterform Studio — Premium Websites for UK Independents",
+    description:
+      "Fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline.",
+  },
   icons: {
     icon: "/seo/icon.svg",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -14,9 +64,45 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Counterform Studio",
+    url: SITE_URL,
+    description:
+      "Fast, premium websites for UK independents who charge premium prices.",
+    areaServed: { "@type": "Country", name: "United Kingdom" },
+    priceRange: "££££",
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Premium website design",
+          url: `${SITE_URL}/services/web-design`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "SEO optimisation",
+          url: `${SITE_URL}/services/seo-optimisation`,
+        },
+      },
+    ],
+    sameAs: [],
+  };
+
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en-GB" className={`${poppins.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

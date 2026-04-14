@@ -20,8 +20,9 @@ export async function generateMetadata({ params }: WorkDetailPageProps) {
   const project = projects.find((item) => item.slug === slug);
 
   return {
-    title: project ? `${project.title} | Counterform Studio` : "Work | Counterform Studio",
+    title: project ? `${project.title} — ${project.category}` : "Work",
     description: project?.summary,
+    alternates: { canonical: project ? project.href : "/work" },
   };
 }
 

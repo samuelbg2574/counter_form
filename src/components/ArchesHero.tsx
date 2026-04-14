@@ -6,7 +6,7 @@ export function ArchesHero() {
   return (
     <section className="arches-hero">
       <Image
-        src="/images/arches/01-hero-image.png"
+        src="/images/arches/01-hero-image.webp"
         alt="Layered studio reference wall"
         fill
         priority
@@ -19,7 +19,7 @@ export function ArchesHero() {
         <h1>Look like the premium choice. Win the premium jobs.</h1>
       </div>
       <div className="arches-hero-bottom">
-        <p>We design and build fast, premium websites for UK builders, architects, and garden designers, so the enquiries you get are the ones worth quoting.</p>
+        <p>We design and build fast, premium websites for UK independents who charge premium prices, so the enquiries you get are the ones worth quoting.</p>
         <ArchesButton href="/contact">START YOUR PROJECT</ArchesButton>
       </div>
     </section>
