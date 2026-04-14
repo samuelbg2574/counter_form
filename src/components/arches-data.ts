@@ -82,48 +82,26 @@ export const processSteps: ProcessStep[] = [
 
 export const services: Service[] = [
   {
-    slug: "template-repositioning",
-    title: "Template Repositioning",
+    slug: "web-design",
+    title: "Web Design",
     description:
-      "Turn a strong template foundation into a distinct brand direction, page order, copy system, and visual language.",
-    image: "/images/arches/07-service-thumb-image.jpg",
-    href: "/services/template-repositioning",
-    detail:
-      "Best when you already have a cloned or purchased design that feels close, but still reads too generic for premium client work.",
-    deliverables: ["Reference audit", "Brand thesis", "Homepage narrative", "Copy rewrite", "Visual divergence checklist"],
-  },
-  {
-    slug: "conversion-websites",
-    title: "Conversion Websites",
-    description:
-      "Design and build focused marketing sites with clear offers, work proof, fast routes to enquiry, and polished responsive behavior.",
+      "Premium websites for service businesses that need sharper positioning, stronger layouts, and a more credible enquiry path.",
     image: "/images/arches/08-service-thumb-image.jpg",
-    href: "/services/conversion-websites",
+    href: "/services/web-design",
     detail:
-      "For agencies, consultants, studios, and service businesses that need a site to carry sales conversations, not just look finished.",
-    deliverables: ["Information architecture", "Next.js implementation", "Responsive sections", "Contact flow", "Performance pass"],
+      "For founders, consultants, and studios that need a site to feel commissioned rather than assembled from a template.",
+    deliverables: ["Positioning audit", "Homepage direction", "Responsive page design", "Next.js implementation", "Launch QA"],
   },
   {
-    slug: "case-study-systems",
-    title: "Case Study Systems",
+    slug: "seo-optimisation",
+    title: "SEO Optimisation",
     description:
-      "Create work pages that make your process and outcomes feel specific, credible, and worth a premium price.",
+      "Technical and on-page SEO improvements that make the site easier to crawl, clearer to understand, and stronger in search.",
     image: "/images/arches/09-service-thumb-image.jpg",
-    href: "/services/case-study-systems",
+    href: "/services/seo-optimisation",
     detail:
-      "For studios that have good work but weak presentation. We give each project a clear role, narrative, and visual module set.",
-    deliverables: ["Work index", "Project templates", "Outcome framing", "Image art direction", "Reusable content model"],
-  },
-  {
-    slug: "motion-polish",
-    title: "Motion Polish",
-    description:
-      "Add scroll reveals, tactile buttons, carousel behavior, and micro-interactions that make the site feel deliberately built.",
-    image: "/images/arches/10-service-thumb-image.jpg",
-    href: "/services/motion-polish",
-    detail:
-      "For static builds that need presence. We keep motion restrained, accessible, and tied to layout hierarchy rather than decoration.",
-    deliverables: ["Reveal system", "Hover states", "Carousel logic", "Reduced-motion support", "Device QA"],
+      "For existing sites that need cleaner indexing, stronger metadata, faster pages, and content structure that supports qualified traffic.",
+    deliverables: ["Technical SEO audit", "Metadata rewrite", "Heading structure", "Performance fixes", "Search-ready page plan"],
   },
 ];
 
