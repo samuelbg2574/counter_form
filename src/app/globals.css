@@ -968,9 +968,22 @@
 }
 
 .arches-testimonials {
-  background: var(--arches-olive);
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--arches-ink);
   padding: 150px 0;
+}
+
+.arches-testimonials .section-label-inverted {
+  color: var(--arches-ink);
+}
+
+.arches-testimonials .section-label-inverted .section-label-chip {
+  border-color: var(--arches-steel);
+  color: var(--arches-ink);
+}
+
+.arches-testimonials .section-label-inverted .section-label-rule {
+  background: var(--arches-line);
 }
 
 @keyframes arches-standard-label-in {
@@ -1091,7 +1104,8 @@
 }
 
 .arches-testimonial-card {
-  background: #ffffff;
+  background: var(--arches-offwhite);
+  border: 1px solid var(--arches-line);
   color: var(--arches-ink);
   flex: 0 0 406px;
   min-height: 302px;
@@ -1150,8 +1164,8 @@
 }
 
 .arches-carousel-next:hover {
-  background: #ffffff;
-  color: var(--arches-ink);
+  background: var(--arches-ink);
+  color: #ffffff;
   transform: translateX(4px);
 }
 
