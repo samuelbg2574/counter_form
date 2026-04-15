@@ -1,6 +1,7 @@
 import { ArchesButton } from "@/components/ArchesButton";
 import { ArchesFooter } from "@/components/ArchesFooter";
 import { ArchesHeader } from "@/components/ArchesHeader";
+import { ContactForm } from "@/components/ContactForm";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata = {
@@ -18,8 +19,8 @@ export default function ContactPage() {
       <section className="arches-subhero arches-contact-hero">
         <div className="arches-container">
           <p className="arches-eyebrow">CONTACT</p>
-          <h1>Send the template, the offer, and the kind of site you want it to become.</h1>
-          <p>We will look for the fastest path from cloned foundation to premium, ownable web system.</p>
+          <h1>Tell us what your site needs to help you sell.</h1>
+          <p>Send the offer, audience, current site, and ideal timeline. We will reply with the clearest next step.</p>
         </div>
       </section>
       <section className="arches-section arches-contact">
@@ -27,26 +28,12 @@ export default function ContactPage() {
           <div className="reveal">
             <h2>Project review</h2>
             <p>
-              Use this as a briefing checklist before a form handler is connected. The important inputs are the source
-              reference, target customer, offer, timeline, and the parts of the template you want to keep.
+              Use the form to start with context, not a sales call. The useful inputs are the offer, target buyer,
+              current site, timeline, and what would make the project commercially worthwhile.
             </p>
             <ArchesButton href="mailto:hello@counterform.studio">EMAIL THE STUDIO</ArchesButton>
           </div>
-          <form className="arches-contact-form reveal">
-            <label>
-              Name
-              <input name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input name="email" placeholder="you@example.com" type="email" />
-            </label>
-            <label>
-              Project
-              <textarea name="project" placeholder="Template URL, business type, and what needs to change." rows={6} />
-            </label>
-            <button type="button">Request review</button>
-          </form>
+          <ContactForm />
         </div>
       </section>
       <ArchesFooter />
