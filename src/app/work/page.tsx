@@ -10,10 +10,17 @@ import { SectionLabel } from "@/components/SectionLabel";
 import { projects } from "@/components/arches-data";
 
 export const metadata: Metadata = {
-  title: "Selected Work — Premium Websites for UK Independents",
+  title: "Selected Work — Premium Websites for Independent UK Businesses",
   description:
     "Live websites shipped by Counterform Studio. Photography, sport, and education projects built around clear positioning and fast enquiry paths.",
   alternates: { canonical: "/work" },
+  openGraph: {
+    title: "Selected Work — Counterform Studio",
+    description:
+      "Live websites shipped by Counterform Studio for photography, sport, and education businesses.",
+    url: "/work",
+    images: [{ url: "/images/counterform/work/ttm-tutoring-hero.webp", alt: "TTM Tutoring website hero screenshot" }],
+  },
 };
 
 export default function WorkPage() {

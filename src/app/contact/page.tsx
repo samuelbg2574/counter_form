@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 export const metadata = {
   title: "Contact — Book a Project Review",
   description:
-    "Book a free 30-minute project call with Counterform Studio. Premium websites for UK independents, fixed price and fixed timeline.",
+    "Book a project review with Counterform Studio. Premium websites for independent UK businesses that need clearer positioning and better enquiries.",
   alternates: { canonical: "/contact" },
 };
 

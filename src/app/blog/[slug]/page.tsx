@@ -7,8 +7,7 @@ import { ArchesFooter } from "@/components/ArchesFooter";
 import { ArchesHeader } from "@/components/ArchesHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { blogPosts } from "@/components/arches-data";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://counterform.studio";
+import { absoluteUrl, breadcrumbJsonLd, serializeJsonLd } from "@/lib/seo";
 
 type BlogDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -33,6 +32,7 @@ export async function generateMetadata({ params }: BlogDetailPageProps) {
       title: post.title,
       description: post.summary,
       publishedTime: post.dateISO,
+      images: [{ url: post.image, alt: post.title }],
     },
   };
 }
@@ -43,17 +43,24 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
   if (!post) notFound();
 
-  const articleLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.summary,
-    datePublished: post.dateISO,
-    author: { "@type": "Organization", name: "Counterform Studio" },
-    publisher: { "@type": "Organization", name: "Counterform Studio" },
-    mainEntityOfPage: `${SITE_URL}${post.href}`,
-    image: `${SITE_URL}${post.image}`,
-  };
+  const schema = [
+    breadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Journal", href: "/blog" },
+      { name: post.title, href: post.href },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: post.title,
+      description: post.summary,
+      datePublished: post.dateISO,
+      author: { "@type": "Organization", name: "Counterform Studio" },
+      publisher: { "@type": "Organization", name: "Counterform Studio" },
+      mainEntityOfPage: absoluteUrl(post.href),
+      image: absoluteUrl(post.image),
+    },
+  ];
 
   return (
     <main className="arches-page">
@@ -61,7 +68,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       <ArchesHeader />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
       />
       <article>
         <section className="arches-subhero arches-blog-hero">

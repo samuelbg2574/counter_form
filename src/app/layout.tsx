@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import { SITE_URL, serializeJsonLd } from "@/lib/seo";
+
 import "./globals.css";
 
 const poppins = localFont({
@@ -14,16 +16,14 @@ const poppins = localFont({
   preload: true,
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://counterform.studio";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Counterform Studio — Premium Websites for UK Independents",
+    default: "Counterform Studio — Premium Websites for Independent UK Businesses",
     template: "%s | Counterform Studio",
   },
   description:
-    "Fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline, built in Next.js for real speed.",
+    "Fast, premium websites for independent UK businesses that need clearer positioning, stronger trust, and better enquiries.",
   keywords: [
     "premium website design UK",
     "web design for small business UK",
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "Counterform Studio",
-    title: "Counterform Studio — Premium Websites for UK Independents",
+    title: "Counterform Studio — Premium Websites for Independent UK Businesses",
     description:
-      "Fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline, built for real speed.",
+      "Fast, premium websites for independent UK businesses that need clearer positioning, stronger trust, and better enquiries.",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Counterform Studio — Premium Websites for UK Independents",
+    title: "Counterform Studio — Premium Websites for Independent UK Businesses",
     description:
-      "Fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline.",
+      "Fast, premium websites for independent UK businesses that need clearer positioning and better enquiries.",
   },
   icons: {
     icon: "/seo/icon.svg",
@@ -70,7 +70,7 @@ export default function RootLayout({
     name: "Counterform Studio",
     url: SITE_URL,
     description:
-      "Fast, premium websites for UK independents who charge premium prices.",
+      "Fast, premium websites for independent UK businesses that need clearer positioning, stronger trust, and better enquiries.",
     areaServed: { "@type": "Country", name: "United Kingdom" },
     priceRange: "££££",
     makesOffer: [
@@ -99,7 +99,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
         />
         {children}
       </body>

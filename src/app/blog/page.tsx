@@ -10,9 +10,9 @@ import { MoreIcon } from "@/components/icons";
 import { blogPosts } from "@/components/arches-data";
 
 export const metadata: Metadata = {
-  title: "Journal — Writing on Premium Web Design for UK Independents",
+  title: "Journal — Writing on Premium Web Design for Independent UK Businesses",
   description:
-    "Practical writing on website pricing, positioning, conversion, and SEO for UK independents who charge premium prices.",
+    "Practical writing on website pricing, positioning, conversion, and SEO for independent UK businesses.",
   alternates: { canonical: "/blog" },
 };
 

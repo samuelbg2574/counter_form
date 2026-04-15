@@ -12,9 +12,9 @@ import { ArchesTestimonials } from "@/components/ArchesTestimonials";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Premium Websites for UK Independents",
+  title: "Premium Websites for Independent UK Businesses",
   description:
-    "Counterform Studio designs and builds fast, premium websites for UK independents who charge premium prices. Fixed price, fixed timeline, shipped in weeks.",
+    "Counterform Studio designs and builds fast, premium websites for independent UK businesses that need clearer positioning and better enquiries.",
   alternates: { canonical: "/" },
 };
 

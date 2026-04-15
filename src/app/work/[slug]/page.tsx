@@ -7,6 +7,7 @@ import { ArchesHeader } from "@/components/ArchesHeader";
 import { CounterformProjectVisual } from "@/components/CounterformProjectVisual";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { blogPosts, projects, services } from "@/components/arches-data";
+import { absoluteUrl, breadcrumbJsonLd, serializeJsonLd } from "@/lib/seo";
 
 type WorkDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -24,6 +25,14 @@ export async function generateMetadata({ params }: WorkDetailPageProps) {
     title: project ? `${project.title} — ${project.category}` : "Work",
     description: project?.summary,
     alternates: { canonical: project ? project.href : "/work" },
+    openGraph: project
+      ? {
+          title: `${project.title} — ${project.category}`,
+          description: project.summary,
+          url: project.href,
+          images: [{ url: project.images.hero, alt: project.imageAlt }],
+        }
+      : undefined,
   };
 }
 
@@ -37,11 +46,36 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
   const relatedService = services.find((service) => service.href === project.serviceHref);
   const relatedPost = blogPosts.find((post) => post.href === project.relatedPostHref);
+  const schema = [
+    breadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Work", href: "/work" },
+      { name: project.title, href: project.href },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      name: project.title,
+      description: project.summary,
+      url: absoluteUrl(project.href),
+      image: absoluteUrl(project.images.hero),
+      about: project.category,
+      creator: {
+        "@type": "Organization",
+        name: "Counterform Studio",
+        url: absoluteUrl("/"),
+      },
+    },
+  ];
 
   return (
     <main className="arches-page">
       <ScrollReveal />
       <ArchesHeader />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
+      />
       <article>
         <section className="arches-detail-hero">
           <CounterformProjectVisual project={project} priority size="hero" />

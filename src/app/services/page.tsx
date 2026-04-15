@@ -11,10 +11,17 @@ import { SectionLabel } from "@/components/SectionLabel";
 import { services } from "@/components/arches-data";
 
 export const metadata: Metadata = {
-  title: "Services — Web Design and SEO for UK Independents",
+  title: "Services — Web Design and SEO for Independent UK Businesses",
   description:
-    "Premium web design and SEO services for UK independents who want a site that matches the quality of the work they sell.",
+    "Premium web design and SEO services for independent UK businesses that want a site that matches the quality of the work they sell.",
   alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Services — Counterform Studio",
+    description:
+      "Focused web design and SEO services for independent UK businesses that need better enquiries.",
+    url: "/services",
+    images: [{ url: "/images/arches/08-service-thumb-image.webp", alt: "Counterform web design service visual" }],
+  },
 };
 
 export default function ServicesPage() {

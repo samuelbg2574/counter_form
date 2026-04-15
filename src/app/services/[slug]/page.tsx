@@ -7,6 +7,7 @@ import { ArchesFooter } from "@/components/ArchesFooter";
 import { ArchesHeader } from "@/components/ArchesHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { blogPosts, services } from "@/components/arches-data";
+import { absoluteUrl, breadcrumbJsonLd, serializeJsonLd } from "@/lib/seo";
 
 type ServiceDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -24,6 +25,14 @@ export async function generateMetadata({ params }: ServiceDetailPageProps) {
     title: service ? service.title : "Services",
     description: service?.description,
     alternates: { canonical: service ? service.href : "/services" },
+    openGraph: service
+      ? {
+          title: service.title,
+          description: service.description,
+          url: service.href,
+          images: [{ url: service.ogImage, alt: `${service.title} service image` }],
+        }
+      : undefined,
   };
 }
 
@@ -36,11 +45,52 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
   }
 
   const relatedPosts = blogPosts.filter((post) => service.relatedPostHrefs.includes(post.href));
+  const schema = [
+    breadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Services", href: "/services" },
+      { name: service.title, href: service.href },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: service.title,
+      description: service.description,
+      serviceType: service.title,
+      url: absoluteUrl(service.href),
+      image: absoluteUrl(service.ogImage),
+      areaServed: {
+        "@type": "Country",
+        name: "United Kingdom",
+      },
+      provider: {
+        "@type": "ProfessionalService",
+        name: "Counterform Studio",
+        url: absoluteUrl("/"),
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: service.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+  ];
 
   return (
     <main className="arches-page">
       <ScrollReveal />
       <ArchesHeader />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
+      />
       <article>
         <section className="arches-detail-hero arches-service-detail-hero">
           <Image src={service.image} alt={`${service.title} service`} fill priority sizes="100vw" />
