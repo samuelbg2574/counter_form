@@ -2,6 +2,43 @@ import type { BlogPost, ProcessStep, Project, ProofPoint, Service } from "@/type
 
 export const projects: Project[] = [
   {
+    slug: "hawthorn-build",
+    location: "Surrey Builder",
+    year: "2026",
+    lastModified: "2026-04-15",
+    title: "Hawthorn Build",
+    description:
+      "A premium local builder site that turns trade credibility, service clarity, and trust signals into quote enquiries.",
+    category: "Local Trade",
+    size: "6 page lead-gen site",
+    service: "Web Design",
+    serviceHref: "/services/web-design",
+    images: {
+      row: "/images/counterform/work/hawthorn-build-row.webp",
+      card: "/images/counterform/work/hawthorn-build-card.webp",
+      hero: "/images/counterform/work/hawthorn-build-hero.webp",
+    },
+    imageAlt: "Homepage hero screenshot of the Hawthorn Build premium builder website.",
+    liveUrl: "https://builder-website-teo5.vercel.app/",
+    href: "/work/hawthorn-build",
+    summary:
+      "A Surrey builder site with strong local positioning, service-led structure, and a quote path for high-value home projects.",
+    challenge:
+      "A building contractor has to sell trust before they can sell the work. The site needed to feel premium, specific, and grounded enough for homeowners considering loft extensions, garage conversions, and full home transformations.",
+    outcome:
+      "We shaped the homepage around trade-specific positioning, proof points, direct quote actions, and service routes that help serious homeowners understand the offer quickly.",
+    builtFor:
+      "A local building contractor selling higher-value home improvement projects where the buyer needs confidence before asking for a quote.",
+    whatChanged: [
+      "The hero leads with a clear promise and local positioning instead of generic contractor copy.",
+      "Service routes make loft extensions, garage conversions, and full transformations easy to understand.",
+      "Trust signals, review language, and quote CTAs are visible early for homeowners comparing risk as much as price.",
+    ],
+    whyItWorks:
+      "High-value home-improvement buyers need to feel that the contractor is organised, credible, and easy to speak to. The site reduces uncertainty before the first enquiry.",
+    relatedPostHref: "/blog/seo-or-new-website-first",
+  },
+  {
     slug: "2728-photos",
     location: "Fine Art Photography",
     year: "2026",

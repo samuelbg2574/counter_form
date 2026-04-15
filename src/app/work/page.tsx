@@ -12,12 +12,12 @@ import { projects } from "@/components/arches-data";
 export const metadata: Metadata = {
   title: "Selected Work — Premium Websites for Independent UK Businesses",
   description:
-    "Live websites shipped by Counterform Studio. Photography, sport, and education projects built around clear positioning and fast enquiry paths.",
+    "Live websites shipped by Counterform Studio. Trades, photography, sport, and education projects built around clear positioning and fast enquiry paths.",
   alternates: { canonical: "/work" },
   openGraph: {
     title: "Selected Work — Counterform Studio",
     description:
-      "Live websites shipped by Counterform Studio for photography, sport, and education businesses.",
+      "Live websites shipped by Counterform Studio for trades, photography, sport, and education businesses.",
     url: "/work",
     images: [{ url: "/images/counterform/work/ttm-tutoring-hero.webp", alt: "TTM Tutoring website hero screenshot" }],
   },
@@ -32,7 +32,7 @@ export default function WorkPage() {
         <div className="arches-container">
           <p className="arches-eyebrow">SELECTED WORK</p>
           <h1>Live websites for clients with very different buyer journeys.</h1>
-          <p>Photography, sport, and education projects built around clear positioning, strong first impressions, and fast enquiry paths.</p>
+          <p>Trades, photography, sport, and education projects built around clear positioning, strong first impressions, and fast enquiry paths.</p>
         </div>
       </section>
       <section className="arches-section arches-listing">

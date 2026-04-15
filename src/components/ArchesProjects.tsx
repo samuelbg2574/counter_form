@@ -14,7 +14,7 @@ export function ArchesProjects() {
         <div className="arches-section-head">
           <div>
             <h2>Real sites, shipped. Fast, clean, built to sell.</h2>
-            <p>Three builds across photography, local sport, and private tuition. Each one designed to turn visitors into booked work.</p>
+            <p>Four builds across trades, photography, local sport, and private tuition. Each one designed to turn visitors into booked work.</p>
           </div>
           <ArchesButton
             href="/work"
