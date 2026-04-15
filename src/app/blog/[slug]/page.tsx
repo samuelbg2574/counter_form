@@ -106,7 +106,15 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   Counterform Studio builds fast, premium websites for UK independents who charge
                   premium prices. Fixed price, fixed timeline, shipped in weeks.
                 </p>
-                <ArchesButton href="/contact">BOOK A PROJECT CALL</ArchesButton>
+                <ArchesButton
+                  href="/contact"
+                  analyticsEvent="contact_cta_click"
+                  analyticsLabel="Book a project call"
+                  analyticsLocation="blog_article_cta"
+                  analyticsSlug={post.slug}
+                >
+                  BOOK A PROJECT CALL
+                </ArchesButton>
               </div>
             </div>
             <div className="arches-blog-article-more">

@@ -40,7 +40,15 @@ export default function WorkPage() {
           <SectionLabel letter="A" label="WORK INDEX" />
           <div className="arches-listing-grid">
             {projects.map((project) => (
-              <Link className="arches-listing-card reveal" href={project.href} key={project.slug}>
+              <Link
+                className="arches-listing-card reveal"
+                href={project.href}
+                key={project.slug}
+                data-analytics-event="work_case_study_click"
+                data-analytics-label={project.title}
+                data-analytics-location="work_index_card"
+                data-analytics-slug={project.slug}
+              >
                 <CounterformProjectVisual project={project} size="card" />
                 <p>
                   {project.location} <span>-</span> {project.year}
@@ -50,7 +58,13 @@ export default function WorkPage() {
               </Link>
             ))}
           </div>
-          <ArchesButton href="/contact" className="arches-listing-cta">
+          <ArchesButton
+            href="/contact"
+            className="arches-listing-cta"
+            analyticsEvent="contact_cta_click"
+            analyticsLabel="Plan a build"
+            analyticsLocation="work_index"
+          >
             PLAN A BUILD
           </ArchesButton>
         </div>

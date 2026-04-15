@@ -1,6 +1,7 @@
 "use client";
 
-import { type FormEvent, useRef, useState } from "react";
+import { track } from "@vercel/analytics";
+import { type FormEvent, useEffect, useRef, useState } from "react";
 
 type FieldName = "name" | "email" | "website" | "goal" | "timeline";
 type ContactStatus = "idle" | "submitting" | "success" | "error";
@@ -16,6 +17,14 @@ const initialResponse: ContactResponse = {
   message: "",
 };
 
+function createSubmissionId() {
+  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
+    return crypto.randomUUID();
+  }
+
+  return `contact-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
 function isContactResponse(value: unknown): value is ContactResponse {
   if (!value || typeof value !== "object") return false;
   const response = value as Partial<ContactResponse>;
@@ -24,13 +33,25 @@ function isContactResponse(value: unknown): value is ContactResponse {
 
 export function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
+  const pagePathRef = useRef<HTMLInputElement>(null);
+  const referrerRef = useRef<HTMLInputElement>(null);
+  const submissionIdRef = useRef<HTMLInputElement>(null);
   const [status, setStatus] = useState<ContactStatus>("idle");
   const [response, setResponse] = useState<ContactResponse>(initialResponse);
+
+  useEffect(() => {
+    if (pagePathRef.current) pagePathRef.current.value = `${window.location.pathname}${window.location.search}`;
+    if (referrerRef.current) referrerRef.current.value = document.referrer;
+    if (submissionIdRef.current) submissionIdRef.current.value = createSubmissionId();
+  }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setStatus("submitting");
     setResponse(initialResponse);
+    const pagePath = pagePathRef.current?.value || "unknown";
+
+    track("contact_form_submit_attempt", { pagePath });
 
     try {
       const res = await fetch("/api/contact", {
@@ -44,9 +65,16 @@ export function ContactForm() {
 
       setResponse(nextResponse);
       setStatus(nextResponse.ok ? "success" : "error");
+      track(nextResponse.ok ? "contact_form_submit_success" : "contact_form_submit_error", {
+        pagePath,
+        status: String(res.status),
+      });
 
       if (nextResponse.ok) {
         formRef.current?.reset();
+        if (pagePathRef.current) pagePathRef.current.value = pagePath;
+        if (referrerRef.current) referrerRef.current.value = document.referrer;
+        if (submissionIdRef.current) submissionIdRef.current.value = createSubmissionId();
       }
     } catch {
       setResponse({
@@ -54,6 +82,10 @@ export function ContactForm() {
         message: "The form could not send just now. Please email hello@counterform.studio directly.",
       });
       setStatus("error");
+      track("contact_form_submit_error", {
+        pagePath,
+        status: "network_error",
+      });
     }
   };
 
@@ -63,6 +95,9 @@ export function ContactForm() {
         Company
         <input name="company" tabIndex={-1} autoComplete="off" />
       </label>
+      <input type="hidden" name="pagePath" ref={pagePathRef} />
+      <input type="hidden" name="referrer" ref={referrerRef} />
+      <input type="hidden" name="submissionId" ref={submissionIdRef} />
       <label>
         Name
         <input

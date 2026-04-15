@@ -20,7 +20,14 @@ export function ArchesHero() {
       </div>
       <div className="arches-hero-bottom">
         <p>We design and build fast, premium websites for independent UK businesses, so serious visitors understand your value before they ask for a quote.</p>
-        <ArchesButton href="/contact">START YOUR PROJECT</ArchesButton>
+        <ArchesButton
+          href="/contact"
+          analyticsEvent="contact_cta_click"
+          analyticsLabel="Start your project"
+          analyticsLocation="hero"
+        >
+          START YOUR PROJECT
+        </ArchesButton>
       </div>
     </section>
   );

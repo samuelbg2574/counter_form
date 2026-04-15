@@ -114,7 +114,15 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
                   <li key={deliverable}>{deliverable}</li>
                 ))}
               </ul>
-              <ArchesButton href="/contact">START WITH THIS</ArchesButton>
+              <ArchesButton
+                href="/contact"
+                analyticsEvent="contact_cta_click"
+                analyticsLabel="Start with this"
+                analyticsLocation="service_detail_intro"
+                analyticsSlug={service.slug}
+              >
+                START WITH THIS
+              </ArchesButton>
             </div>
           </div>
         </section>
@@ -164,7 +172,15 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
           <div className="arches-container arches-case-study-cta reveal">
             <h2>Want this applied to your site?</h2>
             <p>Send the offer, the audience, and the site you have now. We will show you the clearest route to a premium web presence.</p>
-            <ArchesButton href="/contact">BOOK A PROJECT REVIEW</ArchesButton>
+            <ArchesButton
+              href="/contact"
+              analyticsEvent="contact_cta_click"
+              analyticsLabel="Book a project review"
+              analyticsLocation="service_detail_cta"
+              analyticsSlug={service.slug}
+            >
+              BOOK A PROJECT REVIEW
+            </ArchesButton>
           </div>
         </section>
       </article>

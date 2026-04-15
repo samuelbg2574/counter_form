@@ -16,7 +16,14 @@ export function ArchesServices() {
             <h2>One site that makes the right enquiry easier to send.</h2>
             <p>Two focused services. Both built around one question: is this helping serious visitors become paying clients?</p>
           </div>
-          <ArchesButton href="/services">VIEW ALL SERVICES</ArchesButton>
+          <ArchesButton
+            href="/services"
+            analyticsEvent="service_offer_click"
+            analyticsLabel="View all services"
+            analyticsLocation="home_services_header"
+          >
+            VIEW ALL SERVICES
+          </ArchesButton>
         </div>
         <div className="arches-service-list">
           {services.map((service, index) => (
@@ -25,6 +32,10 @@ export function ArchesServices() {
               href={service.href}
               key={service.title}
               style={{ "--service-index": index } as CSSProperties}
+              data-analytics-event="service_offer_click"
+              data-analytics-label={service.title}
+              data-analytics-location="home_service_row"
+              data-analytics-slug={service.slug}
             >
               <span className="arches-service-index">0{index + 1}</span>
               <div className="arches-service-media">

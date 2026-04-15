@@ -31,7 +31,14 @@ export default function ContactPage() {
               Use the form to start with context, not a sales call. The useful inputs are the offer, target buyer,
               current site, timeline, and what would make the project commercially worthwhile.
             </p>
-            <ArchesButton href="mailto:hello@counterform.studio">EMAIL THE STUDIO</ArchesButton>
+            <ArchesButton
+              href="mailto:hello@counterform.studio"
+              analyticsEvent="contact_cta_click"
+              analyticsLabel="Email the studio"
+              analyticsLocation="contact_page"
+            >
+              EMAIL THE STUDIO
+            </ArchesButton>
           </div>
           <ContactForm />
         </div>

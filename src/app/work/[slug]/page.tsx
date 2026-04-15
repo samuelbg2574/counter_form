@@ -111,11 +111,34 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
                 </div>
               </dl>
               <div className="arches-detail-actions">
-                <ArchesButton href={project.liveUrl} external>
+                <ArchesButton
+                  href={project.liveUrl}
+                  external
+                  analyticsEvent="live_site_click"
+                  analyticsLabel={project.title}
+                  analyticsLocation="work_detail_actions"
+                  analyticsSlug={project.slug}
+                >
                   VIEW LIVE SITE
                 </ArchesButton>
-                <ArchesButton href={project.serviceHref}>VIEW SERVICE</ArchesButton>
-                <ArchesButton href="/contact">BUILD SOMETHING LIKE THIS</ArchesButton>
+                <ArchesButton
+                  href={project.serviceHref}
+                  analyticsEvent="service_offer_click"
+                  analyticsLabel={project.service}
+                  analyticsLocation="work_detail_actions"
+                  analyticsSlug={project.slug}
+                >
+                  VIEW SERVICE
+                </ArchesButton>
+                <ArchesButton
+                  href="/contact"
+                  analyticsEvent="contact_cta_click"
+                  analyticsLabel="Build something like this"
+                  analyticsLocation="work_detail_actions"
+                  analyticsSlug={project.slug}
+                >
+                  BUILD SOMETHING LIKE THIS
+                </ArchesButton>
               </div>
             </div>
           </div>
@@ -139,7 +162,17 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
                 <p className="arches-detail-kicker">Why it works</p>
                 <p>{project.whyItWorks}</p>
                 <div className="arches-case-study-links">
-                  {relatedService ? <Link href={relatedService.href}>{relatedService.title}</Link> : null}
+                  {relatedService ? (
+                    <Link
+                      href={relatedService.href}
+                      data-analytics-event="service_offer_click"
+                      data-analytics-label={relatedService.title}
+                      data-analytics-location="work_detail_related"
+                      data-analytics-slug={relatedService.slug}
+                    >
+                      {relatedService.title}
+                    </Link>
+                  ) : null}
                   {relatedPost ? <Link href={relatedPost.href}>{relatedPost.title}</Link> : null}
                 </div>
               </article>
@@ -149,7 +182,15 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
               <p>
                 We can shape the same commercial logic around your offer, audience, and enquiry path.
               </p>
-              <ArchesButton href="/contact">BOOK A PROJECT REVIEW</ArchesButton>
+              <ArchesButton
+                href="/contact"
+                analyticsEvent="contact_cta_click"
+                analyticsLabel="Book a project review"
+                analyticsLocation="work_detail_cta"
+                analyticsSlug={project.slug}
+              >
+                BOOK A PROJECT REVIEW
+              </ArchesButton>
             </div>
           </div>
         </section>

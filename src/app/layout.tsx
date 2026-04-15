@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 
+import { AnalyticsClickTracker } from "@/components/AnalyticsClickTracker";
 import { SITE_URL, serializeJsonLd } from "@/lib/seo";
 
 import "./globals.css";
@@ -102,6 +104,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
         />
         {children}
+        <AnalyticsClickTracker />
+        <Analytics />
       </body>
     </html>
   );

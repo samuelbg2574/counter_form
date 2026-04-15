@@ -53,7 +53,14 @@ export function ArchesHeader() {
         <LogoMark className="arches-logo-word" />
       </Link>
       <div className="arches-header-right">
-        <Link href="/contact">START A PROJECT</Link>
+        <Link
+          href="/contact"
+          data-analytics-event="contact_cta_click"
+          data-analytics-label="Start a project"
+          data-analytics-location="desktop_header"
+        >
+          START A PROJECT
+        </Link>
         <button
           className="arches-menu-button"
           type="button"
@@ -78,7 +85,14 @@ export function ArchesHeader() {
       >
         <nav aria-label="Mobile">
           {mobileLinks.map((link) => (
-            <Link href={link.href} key={link.label} onClick={() => setOpen(false)}>
+            <Link
+              href={link.href}
+              key={link.label}
+              onClick={() => setOpen(false)}
+              data-analytics-event={link.href === "/contact" ? "contact_cta_click" : undefined}
+              data-analytics-label={link.label}
+              data-analytics-location="mobile_menu"
+            >
               {link.label}
             </Link>
           ))}

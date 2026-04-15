@@ -18,7 +18,14 @@ export function ArchesFooter() {
         <div className="arches-footer-contact">
           <div>
             <h3>CONTACT US</h3>
-            <a href="/contact">Book a project review</a>
+            <a
+              href="/contact"
+              data-analytics-event="contact_cta_click"
+              data-analytics-label="Book a project review"
+              data-analytics-location="footer"
+            >
+              Book a project review
+            </a>
           </div>
         </div>
         <FooterColumn title="MENU" items={footerMenu} />

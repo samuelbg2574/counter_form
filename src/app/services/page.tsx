@@ -46,6 +46,10 @@ export default function ServicesPage() {
                 href={service.href}
                 key={service.slug}
                 style={{ "--service-index": index } as CSSProperties}
+                data-analytics-event="service_offer_click"
+                data-analytics-label={service.title}
+                data-analytics-location="services_index_card"
+                data-analytics-slug={service.slug}
               >
                 <div className="arches-listing-media">
                   <Image src={service.image} alt={`${service.title} service image`} width={720} height={560} />
@@ -57,7 +61,13 @@ export default function ServicesPage() {
               </Link>
             ))}
           </div>
-          <ArchesButton href="/contact" className="arches-listing-cta">
+          <ArchesButton
+            href="/contact"
+            className="arches-listing-cta"
+            analyticsEvent="contact_cta_click"
+            analyticsLabel="Discuss a project"
+            analyticsLocation="services_index"
+          >
             DISCUSS A PROJECT
           </ArchesButton>
         </div>

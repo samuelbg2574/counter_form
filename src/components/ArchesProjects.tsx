@@ -16,11 +16,26 @@ export function ArchesProjects() {
             <h2>Real sites, shipped. Fast, clean, built to sell.</h2>
             <p>Three builds across photography, local sport, and private tuition. Each one designed to turn visitors into booked work.</p>
           </div>
-          <ArchesButton href="/work">VIEW ALL WORK</ArchesButton>
+          <ArchesButton
+            href="/work"
+            analyticsEvent="work_case_study_click"
+            analyticsLabel="View all work"
+            analyticsLocation="home_work_header"
+          >
+            VIEW ALL WORK
+          </ArchesButton>
         </div>
         <div className="arches-project-list">
           {projects.map((project) => (
-            <Link className="arches-project-row reveal" href={project.href} key={project.title}>
+            <Link
+              className="arches-project-row reveal"
+              href={project.href}
+              key={project.title}
+              data-analytics-event="work_case_study_click"
+              data-analytics-label={project.title}
+              data-analytics-location="home_work_row"
+              data-analytics-slug={project.slug}
+            >
               <div className="arches-project-title">
                 <p>
                   {project.location} <span>-</span> {project.year}
