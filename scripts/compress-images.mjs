@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
 import { readdir, stat } from "node:fs/promises";
 import { extname, join } from "node:path";
 import sharp from "sharp";

@@ -10,12 +10,13 @@ import { proofPoints } from "@/components/arches-data";
 
 export function ArchesTestimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
   const loopedProof = [...proofPoints, ...proofPoints];
 
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (reduceMotion) {
+    if (reduceMotion || paused) {
       return;
     }
 
@@ -24,7 +25,7 @@ export function ArchesTestimonials() {
     }, 5200);
 
     return () => window.clearInterval(timer);
-  }, []);
+  }, [paused]);
 
   const goNext = () => {
     setActiveIndex((current) => (current + 1) % proofPoints.length);
@@ -34,7 +35,14 @@ export function ArchesTestimonials() {
     <section className="arches-testimonials" id="proof">
       <div className="arches-container">
         <SectionLabel letter="D" label="OPERATING STANDARD" inverted />
-        <div className="arches-testimonial-frame" aria-live="polite">
+        <div
+          className="arches-testimonial-frame"
+          aria-live="polite"
+          onBlurCapture={() => setPaused(false)}
+          onFocusCapture={() => setPaused(true)}
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+        >
           <div
             className="arches-testimonial-track"
             style={{ "--active-index": activeIndex } as CSSProperties}
@@ -52,7 +60,7 @@ export function ArchesTestimonials() {
               </article>
             ))}
           </div>
-          <button className="arches-carousel-next" type="button" aria-label="Next standard" onClick={goNext}>
+          <button className="arches-carousel-next" type="button" aria-label="Next proof point" onClick={goNext}>
             <ArrowIcon />
           </button>
         </div>

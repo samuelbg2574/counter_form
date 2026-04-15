@@ -160,6 +160,21 @@
   text-decoration: none;
 }
 
+.arches-page :where(a, button, input, textarea, summary):focus-visible {
+  outline: 2px solid var(--arches-steel);
+  outline-offset: 4px;
+}
+
+.arches-header :where(a, button):focus-visible,
+.arches-mobile-drawer a:focus-visible {
+  outline-color: #ffffff;
+}
+
+.arches-contact-form :where(input, textarea):focus-visible {
+  border-color: var(--arches-steel);
+  box-shadow: 0 0 0 3px rgb(119 141 169 / 18%);
+}
+
 .reveal {
   transform: translateY(0);
 }
