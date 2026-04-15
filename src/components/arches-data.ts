@@ -16,7 +16,7 @@ export const projects: Project[] = [
     images: {
       row: "/images/counterform/work/hawthorn-build-row.webp",
       card: "/images/counterform/work/hawthorn-build-card.webp",
-      hero: "/images/counterform/work/hawthorn-build-hero.webp",
+      hero: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=2400&q=80&auto=format&fit=crop",
     },
     imageAlt: "Homepage hero screenshot of the Hawthorn Build premium builder website.",
     liveUrl: "https://builder-website-teo5.vercel.app/",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     images: {
       row: "/images/counterform/work/2728-photos-row.webp",
       card: "/images/counterform/work/2728-photos-card.webp",
-      hero: "/images/counterform/work/2728-photos-hero.webp",
+      hero: "https://images.unsplash.com/photo-1510936111840-65e151ad71bb?w=2400&q=80&auto=format&fit=crop",
     },
     imageAlt: "Homepage hero screenshot of the 2728 Photos fine art photography website.",
     liveUrl: "https://george-photo-site.vercel.app/",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     images: {
       row: "/images/counterform/work/touch-point-judo-row.webp",
       card: "/images/counterform/work/touch-point-judo-card.webp",
-      hero: "/images/counterform/work/touch-point-judo-hero.webp",
+      hero: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=2400&q=80&auto=format&fit=crop",
     },
     imageAlt: "Homepage hero screenshot of the Touch Point Judo Academy website.",
     liveUrl: "https://touchpointjudo-mockup.vercel.app/",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     images: {
       row: "/images/counterform/work/ttm-tutoring-row.webp",
       card: "/images/counterform/work/ttm-tutoring-card.webp",
-      hero: "/images/counterform/work/ttm-tutoring-hero.webp",
+      hero: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=2400&q=80&auto=format&fit=crop",
     },
     imageAlt: "Homepage hero screenshot of the TTM Tutoring private tuition website.",
     liveUrl: "https://ttm-website-three.vercel.app/",

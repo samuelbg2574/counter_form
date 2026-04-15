@@ -680,8 +680,7 @@
 
 .counterform-project-visual--hero .counterform-project-visual__wash {
   background:
-    linear-gradient(90deg, rgb(13 27 42 / 82%), rgb(13 27 42 / 44%) 42%, rgb(13 27 42 / 14%)),
-    linear-gradient(0deg, rgb(13 27 42 / 52%), transparent 58%);
+    linear-gradient(0deg, rgb(13 27 42 / 88%) 0%, rgb(13 27 42 / 62%) 35%, rgb(13 27 42 / 28%) 70%, rgb(13 27 42 / 20%) 100%);
   position: absolute;
 }
 
@@ -1341,7 +1340,7 @@
 
 .arches-subhero p:last-child,
 .arches-detail-hero-copy > p:last-child {
-  color: rgb(255 255 255 / 78%);
+  color: #ffffff;
   font-size: 18px;
   line-height: 30.6px;
   margin: 28px 0 0;
